@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="servicereqform.css">
+</head>
+
+<body class="body">
+    
+    <!--form for the request service page-->
+    <form action="actionan.php">
+        <div class="container">
+            <label for="fname">First Name:</label>
+            <input type="text" placeholder="Type your First Name"  id="fname" name="fname" required>
+    
+            
+            <label for="lname">Last Name:</label>
+            <input type="text" placeholder="Type your Last Name"  id="lname" name="lname" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" placeholder="Type your Email Address"  id="email" name="email" required>
+            
+            <label for="phone">Contact Number:</label>
+            <input type="tel" id="phone" placeholder="Enter your complete phone number"  name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+
+            <input type="radio" id="onsite" name="onsite" value="onsite">
+              <label for="onsite">Onsite</label>
+            
+            <input type="radio" id="work" name="work" value="work">
+              <label for="work">Work From Home</label>
+
+            <br for="loc"><br/> Location: <br/> For onsite, please state your work station No., Department, Floor and Building <br/> For work from home, please complete your address and include a landmark nearest to your location</label>
+            <input type="text" placeholder="Type your Complete Adress"  id="address" name="address" required>
+
+            <label for="service">Service Request Type:</label>
+            <select name="service" id="service">
+                <option value="desktop">Desktop/Laptop Setup</option>
+                <option value="desktopsup">Desktop/Laptop Support</option>
+                <option value="desktopmaint">Desktop/Laptop Maintenance</option>
+                <option value="software">Software Installation</option>
+                <option value="softwaresup">Software Support</option>
+                <option value="computer">Computer Peripheral Setup</option>
+                <option value="computertrouble">Computer Peripheral Troubleshooting</option>
+                <option value="maintenance">Computer Peripheral Maintenance</option>
+              </select>
+
+
+        </div>
+        
+        <div class="container">
+            <label for="request">Request Description: <br/></label>
+            <textarea id="request" placeholder="Explain your service request as details as possible" name="request" rows="4" cols="50"></textarea>
+        </div>
+
+        <div class="container">
+            <label for="request">Upload a picture/screenshot for reference: </label>
+            <input type="file" id="myFile" name="filename">
+
+            <br/>
+            <button onclick="myFunction()">Submit</button>
+            <input type="reset" value="Reset">
+        </div>
+
+        
+    </form>
+
+    <!--javascript to show notif once submit is clicked-->
+    <script>
+
+        function myFunction() {
+            alert("Thanks for submitting your request!");
+        }
+    </script>
+
+</body>
+</html>

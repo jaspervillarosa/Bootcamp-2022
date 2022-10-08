@@ -1,0 +1,48 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.first {
+    background-color: lightpink;
+    margin: 20px;
+    margin-bottom: 40px;
+    border: 2px solid black;
+}
+
+.second {
+    background-color: lightblue;
+    margin: 20px;
+    margin-bottom: 40px;
+    border: 2px solid black;
+    padding-bottom: 120px;
+}
+
+.Header {
+
+    background-color: beige;
+    margin: 20px;
+    padding: 20px;
+    border: solid black;
+
+}
+
+.header {
+
+    background-color: aquamarine;
+    margin: 5px;
+    padding: 5px;
+    border: dotted black;
+    display: inline-block;
+}
+
+/* block */ 
+/* entire horizontal line  */
+
+/* inline-block take effect other margin and shit  */
+
+/* inline is sa content lang  */
+

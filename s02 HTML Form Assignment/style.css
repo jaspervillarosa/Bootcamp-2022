@@ -1,0 +1,93 @@
+/* for the index html design for the page and fit it in the entire screen then the font to be used  */
+body{
+    background-image: url(bg.svg);
+    font-family:  "Segoe UI";
+    /* Full height */
+    height: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 50%;
+  }  
+
+  /* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 50%;
+  }
+
+  /* google  */
+  .fa-google {
+    background: #99344c;
+    color: white;
+    border-radius: 50%;
+  }
+
+  /* hover every button when the cursor passed it  */
+  button:hover {
+    opacity: 0.8;
+  }
+
+  a.fa:hover{
+    opacity: 0.8;
+
+  }
+
+  .logincontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+
+  /* The "Forgot password" text */
+span.psw {
+    float: right;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+  /* make all container wider around the content */
+  .container {
+    padding: 16px;
+  }
+
+  /* make all the container around the content at the bottom part wider and the texts centered  */
+  .container_baba {
+    padding: 16px;
+    text-align: center;
+  }
+
+  /* make the input boxes more appealing  */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }

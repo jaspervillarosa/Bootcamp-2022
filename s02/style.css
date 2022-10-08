@@ -1,0 +1,104 @@
+body{
+    background-color: lightblue;
+}
+
+h1{
+    background-color: brown;
+}
+
+span{
+
+    background-color: blue;
+    color: yellow;
+} 
+
+#title-1{
+
+    color: chocolate;
+    text-align: center;
+}
+
+.title-2{
+
+    color: aliceblue;
+    text-align: center;
+}
+
+[type="title"]{
+
+
+}
+
+/* universal  */
+*{ 
+
+}
+
+/* Combinator Selector */
+/* Descendant Selector 
+- selects/targets "all elements" that matches the specified element
+
+Syntax: First Element child element {
+    property value
+*/
+/* 
+div p{
+    background-color: red;
+} */
+
+/* 
+Child Selector 
+-Selects/targets "all" elements that are all "children" of specified element */
+/* 
+div > p {
+    background-color: chocolate;
+} */
+
+
+/* adjacent selector -katabi directly aftyer tyhe first selector*/
+/* 
+p + p{
+
+}
+
+div + p {
+
+} */
+
+
+/* General Sibling  */
+/* 
+p ~ p {
+
+
+} */
+
+/* Medium devices (Landscape tablet, 768 px and up)
+ */
+
+ @media only screen and (min:width: 500px){
+
+    .screen {background: pink}
+ }
+
+ /* Large Devices */
+ @media only screen amd (min:width: 900px){
+
+    .screen {background:blue;}
+ }
+
+ /* Pseudo element  */
+ p::first-letter{
+    color: brown;
+    font-size: 200%;
+ }
+
+ li  {
+    list-style-type: none;
+ }
+
+ ul > li {
+
+    letter-spacing: 4px;
+ }
+ 

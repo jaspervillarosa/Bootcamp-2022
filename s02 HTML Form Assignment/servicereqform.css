@@ -1,0 +1,28 @@
+/* have a background image and fit it in the entire screen then the font for all */
+body{
+    background-image: url(bg.svg);
+    font-family:  "Segoe UI";
+    /* Full height */
+    height: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+/* make the container padding a bit wider */
+.container {
+    padding: 16px;
+  }
+
+/* make the forms appealing */
+input[type=text], input[type=email], input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }

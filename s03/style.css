@@ -1,0 +1,65 @@
+/* #hoshi img {
+
+    width: 10%;
+    height: 10%;
+    border-radius: 4px;
+} */
+
+
+ ul > li {
+
+    letter-spacing: 4px;
+ }
+
+ /* Change the font-family and the font-size of all elements using the universal selector. */
+ *{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+ }
+
+ /* Change the font-size of h1 using a type selector */
+h1 {
+    font-size: 24px;
+}
+
+/* Change the text to all upper case for h2 tags using an id selector */
+h2 {
+    text-transform: uppercase;
+  }
+
+  /* Change the background colors of the languages to be learn list items using a class selector. */
+#language {
+
+    background-color: bisque;
+}
+
+/* Change the border of the tools to be used list items using an attribute selectors */
+[class|=logo] img{
+
+    border-radius: 50%;
+}
+
+/* Change the list style type of other things to be learned using an adjacent sibling selector */
+img + ul {
+    list-style-type: none;
+  }
+
+/* Change the alignment of the last paragraph using a general sibling selector. */
+div ~ p {
+
+    text-align: center;
+}
+
+
+/* Change the dimensions of the image tag using a descendant selector. */
+div img {
+    
+    width: 10%;
+    height: 10%;
+}
+
+/* Change the letter spacing of other things to be learned list items using a child selector. */
+div:nth-child(1){
+
+    letter-spacing: 10px;
+}

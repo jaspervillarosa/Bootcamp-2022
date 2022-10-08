@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!--typ html then scroll down html 5-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--free icons from the net-->
+        <script src="https://kit.fontawesome.com/d258feda9a.js" crossorigin="anonymous"></script>
+        <!--helps us to make a responsive website-->
+        <title>First HTMl Page</title>
+    
+        <style>
+
+            .page_design {
+            
+            background-image: url("bg.png");
+            background-color: green;
+            font-family:  "Segoe UI";
+            /* Full height */
+            height: 100%;
+
+            /* Center and scale the image nicely
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; */
+
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+            /* text-indent: 50px; */
+
+                    }
+
+            ul.no-bullets {
+            list-style-type: none; /* Remove bullets */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margins */
+            }
+
+            /*arrangement of the whole division*/
+            .wrapper {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            /*arrangement of icons compliment to the text and other*/
+            .wrapper .icon {
+
+                margin: 5 20px;
+                padding-top: 2%;
+                cursor: pointer;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: column;
+                position: relative;
+                z-index: 2;
+
+            }
+
+            /* the circle shape in the icon */
+            .wrapper .icon span{
+                height: 60px;
+                width: 60px;
+                display: block;
+                background: #fff;
+                border-radius: 50%;
+                text-align: center;
+                box-shadow: 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            /*icon size and height*/
+            .wrapper .icon span i{
+
+                font-size: 25px;
+                line-height: 60px;
+            }
+
+            .wrapper .icon .tooltip{
+
+                font-size: 15px;
+                padding: 10px 18px;
+            }
+
+            /* Place the navbar at the bottom of the page, and make it stick */
+            .navbar {
+            background-color: #D2E3ED;
+            overflow: auto;
+            position: fixed;
+            left: -10px;
+            bottom: 0;
+            width: 150%;
+            }
+
+            /* Style the links inside the navigation bar */
+            .navbar a {
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 20px;
+            }
+
+            /* Add a color to the active/current link */
+            .navbar a.active {
+            background-color: lightblue;
+            color: black;
+            }
+
+        </style>
+
+    </head>
+
+    <!--start of body-->
+    <body class="page_design">
+
+        <!--bottom nav bar-->
+        <div class="navbar">
+            <a href="" class="active"><i class="fa-brands fa-windows"></i></a>
+        </div>
+        
+            <h1>World Wide Web</h1>
+            <p>The WorldWideWeb (W3) is a wide-area <a href="http://info.cern.ch/hypertext/WWW/WhatIs.html">hypermedia</a> information retrieval initiative aiming to give universal access to a large universe of documents.</p>
+   
+            <p>Everything there is online about W3 is linked directly or indirectly to this document, including: </p>
+        
+        <!--first division-->
+        <div class="wrapper">
+
+            <div class="icon executive">
+                <span><a href="http://info.cern.ch/hypertext/WWW/Summary.html"><i class="fa-solid fa-layer-group"></i></a></span>
+                <div class="tooltip"> Executive Summary</div>
+           </div>
+
+           <div class="icon Mailing">
+                  <span><a href="http://info.cern.ch/hypertext/WWW/Administration/Mailing/Overview.html"><i class="fa-solid fa-envelopes-bulk"></i> </a></span>
+                     <div class="tooltip"> Mailing List</div>
+           </div>
+
+            <div class="icon Policy">
+                    <span><a href="http://info.cern.ch/hypertext/WWW/Policy.html"> <i class="fa-solid fa-building-shield"></i></a></span>
+                    <div class="tooltip"> Policy</div>
+            </div>
+
+            
+           <div class="icon News">
+                    <span><a href="http://info.cern.ch/hypertext/WWW/News/9211.html"><i class="fa-solid fa-newspaper"></i> </a></span>
+                     <div class="tooltip"> W3 News</div>
+            </div>
+
+            <div class="icon outthere">
+                    <span><a href="http://info.cern.ch/c hypertext/DataSources/Top.html"><i class="fa-solid fa-magnifying-glass"></i></a></span>
+                      <div class="tooltip"> Whats out there?</div>
+                      <div>
+                        <ul class="no-bullets">
+                            <li><a href="http://info.cern.ch/hypertext/DataSources/bySubject/Overview.html">subjects</a></li>
+                            <li><a href="http://info.cern.ch/hypertext/DataSources/WWW/Servers.html">W3 server</a></li>
+                        </ul>
+                      </div>
+             </div>
+
+        </div>
+        <!--end of first division-->
+             
+  
+        <!--second division of icons-->
+        <div class="wrapper" >
+
+               <div class="icon Help">
+                    <span><a href="http://info.cern.ch/hypertext/WWW/Help.html"><i class="fa-solid fa-hand"></i></a></span>
+                    <div class="tooltip"> Help</div>
+               </div>
+
+               <div class="icon Software">
+                     <span><a href="http://info.cern.ch/hypertext/WWW/Status.html"><i class="fa-brands fa-product-hunt"></i></a></span>
+                     <div class="tooltip"> Software Products</div>
+                     <div>
+                            <ul class="no-bullets">
+                                <li><a href="http://info.cern.ch/hypertext/WWW/LineMode/Browser.html">Line Mode</a></li>
+                                <li>X11 <a href="http://info.cern.ch/hypertext/WWW/Status.html#35">Viola</a></li>
+                                <li><a href="http://info.cern.ch/hypertext/WWW/NeXT/WorldWideWeb.html">NextStep</a></li>
+                                <li><a href="http://info.cern.ch/hypertext/WWW/Daemon/Overview.html">Servers</a></li>
+                                <li><a href="http://info.cern.ch/hypertext/WWW/Tools/Overview.html">Tools</a></li>
+                                <li><a href="http://info.cern.ch/hypertext/WWW/MailRobot/Overview.html">Mail robot</a></li>
+                                <li><a href="http://info.cern.ch/hypertext/WWW/Status.html#57">Library</a></li>
+                            </ul>
+                    </div>
+                </div>
+
+                <div class="icon Technical">
+                      <span><a href="http://info.cern.ch/hypertext/WWW/Technical.html"><i class="fa-solid fa-gear"></i></a></span>
+                      <div class="tooltip"> Technical</div>
+                </div>
+
+                <div class="icon Bibliography">
+                      <span><a href="http://info.cern.ch/hypertext/WWW/Bibliography.html"><i class="fa-solid fa-book"></i></a></span>
+                      <div class="tooltip"> Bibliography</div>
+                 </div>
+
+                 <div class="icon People">
+                    <span><a href="http://info.cern.ch/hypertext/WWW/People.html"> <i class="fa-sharp fa-solid fa-person"></i></a></span>
+                    <div class="tooltip"> People</div>
+               </div>
+    
+               <div class="icon History">
+                     <span><a href="http://info.cern.ch/hypertext/WWW/History.html"><i class="fa-solid fa-box-archive"></i></a></span>
+                     <div class="tooltip"> History</div>
+               </div>
+    
+               <div class="icon How">
+                  <span><a href="http://info.cern.ch/hypertext/WWW/Helping.html"><i class="fa-solid fa-handshake-angle"></i></a></span>
+                  <div class="tooltip"> How can I Help?</div>
+             </div>
+    
+             <div class="icon GetCode">
+                   <span><a href="http://info.cern.ch/hypertext/README.html"> <i class="fa-solid fa-code"></i></a></span>
+                   <div class="tooltip"> Getting Code</div>
+                   <div>
+                        <ul class="no-bullets">
+                            <li><a href="http://info.cern.ch/hypertext/WWW/LineMode/Defaults/Distribution.html">anonymous FTP</a> </li>
+                        </ul>
+                   </div>
+             </div>
+
+        </div> 
+        <!--end of second division-->
+
+        
+    </body>
+    <!--end of body-->
+  
+ 
+</html>

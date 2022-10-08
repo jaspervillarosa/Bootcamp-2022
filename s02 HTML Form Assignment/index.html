@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in Page</title>
+    <!--link the css file for design-->
+    <link rel="stylesheet" href="style.css">
+    <!--link for free icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="body">
+
+        <!--a form that once button log in is clicked proceed to service request form page-->
+        <form action="servicereqform.html">
+
+            <!-- <div class="imgcontainer">
+                <img src="" alt="avatar">
+            </div> -->
+
+            <div class="logincontainer">
+                <h1>Login</h1>
+            </div>
+            
+            <!--container for log in page top part-->
+            <div class="container">
+                <label for="email">Username: </label>
+                <input type="text" id="username" placeholder="Type your Username" name="username" required>    
+
+                <label for="password">Password: </label>
+                <input type="text" id="password" placeholder="Type your Password" name="password" required>
+
+                <button onclick="myFunction()">Log in</button>
+
+                <label for="">
+                    <input type="checkbox" name="remember">  Remember me
+                </label>
+            </div>
+
+            <!--container for log in page bottom part-->
+            <div class="container_baba">
+                <label for="signup_using"> Or Sign Up Using</label>
+            </div>
+
+            <div class="container_baba">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+            </div>
+
+            <div class="container">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+        </form>
+        
+        <!--javascript that will indicate a notif once button log in is clicked-->
+        <script>
+
+            function myFunction() {
+                alert("Thank you for logging in!");
+            }
+        </script>
+
+</body>
+</html>
