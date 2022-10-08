@@ -1,4 +1,4 @@
-body{
+/* body{
     background-color: lightblue;
 }
 
@@ -30,9 +30,9 @@ span{
 }
 
 /* universal  */
-*{ 
+/* *{ 
 
-}
+} */
 
 /* Combinator Selector */
 /* Descendant Selector 
@@ -76,19 +76,19 @@ p ~ p {
 /* Medium devices (Landscape tablet, 768 px and up)
  */
 
- @media only screen and (min:width: 500px){
+ /* @media only screen and (min:width: 500px){
 
     .screen {background: pink}
  }
 
  /* Large Devices */
- @media only screen amd (min:width: 900px){
+ /* @media only screen amd (min:width: 900px){
 
     .screen {background:blue;}
- }
+ } */
 
  /* Pseudo element  */
- p::first-letter{
+ /* p::first-letter{
     color: brown;
     font-size: 200%;
  }
@@ -100,5 +100,8 @@ p ~ p {
  ul > li {
 
     letter-spacing: 4px;
- }
- 
+ } */ 
+
+ body{
+    background-color: lightblue;
+}
