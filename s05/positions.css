@@ -44,17 +44,49 @@ img.absolutePosition {
     height: 200px ;
 }
 
-.stickyPosition {
+.fixedPosition {
 
     position: fixed;
-    border: 3px dotted burlywood;
+    border: 4px solid green;
+    margin-left: 800px;
     
-    /* does not follow the flow of the webpage  */
-    /* might overlap with other */
+    /* does not move in the webpage */
 }
 
-img.stickyPosition {
-
+/* img.stickyPosition {
+    padding: auto;
     width: 150px;
     height: 100px ;
 }
+ */
+
+ .snoopyFixed {
+
+    position: fixed;
+    top: 600px;
+    margin-left: 800px;
+    height: auto;
+    width: 150px;
+    border: 3px solid gold;
+
+ }
+
+ .buttonClick {
+
+    position: fixed;
+    top: 700px;
+    margin-left: 800px;
+
+ }
+
+ .stickyPosition {
+    
+    /* webkit sticky is for any windows and for safari  */
+    position: -webkit-sticky; 
+    position: sticky;
+    border: 4px dashed brown;
+    top: 100px;
+    margin-left: 800px;
+
+ }
+ 
