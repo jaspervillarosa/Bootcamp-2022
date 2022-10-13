@@ -1,0 +1,60 @@
+.staticPosition{
+
+    border: 2px solid #7A08;
+}
+/* top, bottom, left are not working */
+
+
+img.staticPosition {
+    width: 150px;
+    height: 100px;
+}
+
+.relativePosition {
+    position: relative;
+    border: 2px dashed goldenrod;
+    /* top:10px;
+    bottom: 150px; */
+
+    /* top, bottom, left are working  */
+
+}
+
+img.relativePosition{
+
+    width: 150px;
+    height: 100px;
+    top:10px;
+    bottom: 150px;
+   
+}
+
+.absolutePosition {
+
+    position: absolute;
+    border: 3px dotted burlywood;
+    
+    /* does not follow the flow of the webpage  */
+    /* might overlap with other */
+}
+
+img.absolutePosition {
+
+    width: 300px;
+    height: 200px ;
+}
+
+.stickyPosition {
+
+    position: fixed;
+    border: 3px dotted burlywood;
+    
+    /* does not follow the flow of the webpage  */
+    /* might overlap with other */
+}
+
+img.stickyPosition {
+
+    width: 150px;
+    height: 100px ;
+}
