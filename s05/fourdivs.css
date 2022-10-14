@@ -1,16 +1,11 @@
 
-div.forfirstdivs {
-
-    text-align: left;
-}
-
 .forfirstdivs {
 
     position: absolute;
     top: 10px;
     left: 10px;
-    margin: 10px;
-    padding: 160px ;
+    margin: 5px;
+    padding: 200px ;
     padding-bottom: 100%;
     display: inline-block;
     border: 3px solid black;
@@ -25,8 +20,8 @@ div.forfirstdivs {
     position: absolute;
     top: 10px;
     left: 510px;
-    margin: 10px;
-    padding: 160px ;
+    margin: 5px;
+    padding: 200px ;
     padding-bottom: 100%;
     display: inline-block;
     border: 3px solid black;
@@ -41,8 +36,8 @@ div.forfirstdivs {
     position: absolute;
     top: 10px;
     left: 1010px;
-    margin: 10px;
-    padding: 160px ;
+    margin: 5px;
+    padding: 200px ;
     padding-bottom: 100%;
     display: inline-block;
     border: 3px solid black;
@@ -57,8 +52,8 @@ div.forfirstdivs {
     position: absolute;
     top: 10px;
     left: 1510px;
-    margin: 10px;
-    padding: 160px ;
+    margin: 5px;
+    padding: 200px ;
     padding-bottom: 100%;
     display: inline-block;
     border: 3px solid black;
