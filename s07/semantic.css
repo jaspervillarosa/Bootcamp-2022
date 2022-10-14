@@ -1,0 +1,77 @@
+body {
+
+    background-color: whitesmoke;
+    margin: 0;
+
+}
+
+body nav {
+
+    background-color: gainsboro;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+body nav ul {
+
+    margin: 0;
+    
+}
+
+body nav ul li {
+
+    display: inline-block;
+}
+
+body nav ul li a {
+
+    display: block;
+    padding: 5px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+
+}
+
+body nav ul li a:hover {
+
+    background-color: black;
+
+}
+
+h1 {
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+figcaption{
+
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+img {
+
+    border-radius: 50%;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    padding: 20px;
+}
+
+footer {
+
+    background-color: azure;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
