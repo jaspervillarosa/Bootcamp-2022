@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Bootcamp-2022",
+			"path": ".."
+		},
+		{
+			"name": "WD26-Code-Blooded",
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Bootcamp-2022"
+	}
+}
