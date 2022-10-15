@@ -1,0 +1,236 @@
+body {
+
+    background-color: whitesmoke;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+nav {
+
+    background-color: gray;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: inline-block;
+    padding: 0;
+    
+}
+
+nav ul {
+
+    margin: 0;
+    
+}
+
+li {
+
+    display: inline-block;
+}
+
+nav ul li a {
+
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+body nav ul li a:hover {
+
+    background-color: black;
+
+}
+
+h1 {
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+h2 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+h3 {
+    padding-top: 20px;
+    padding-left: 30px;
+    text-align: left;
+}
+
+p {
+    padding: 20px;
+    padding-left: 30px;
+    text-align: justify;
+}
+
+footer {
+
+    background-color: seashell;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+dl {
+    text-align: justify;
+}
+
+dl dt {
+    padding: 30px;
+    text-align: justify;
+}
+
+.contact_dt dt {
+
+    padding: 0;
+    text-align: center;
+}
+
+.youngada {
+
+    float: left;
+    border: 1px solid gray;
+    padding: 5px;
+  
+}
+
+.youngada img {
+    
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    display: block;
+
+
+}
+
+.adultada {
+
+    float: right;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.adultada img {
+    
+    margin: 0;
+    padding: 0;
+    width: 550px;
+    height: 800px;
+    display: inline-block;
+}
+
+.workingada {
+
+    float: left;
+    border: 1px solid gray;
+    padding: 5px;
+  
+}
+
+.workingada img {
+    
+    margin: 0;
+    padding: 0;
+    width: 550px;
+    height: 800px;
+    display: inline-block;
+
+}
+
+.container {
+    position: relative;
+    float: right;
+    width: 50%;
+    max-width: 300px;
+    border: 1px solid gray;
+    padding: 5px;
+  }
+  
+img {
+    
+    border-radius: 50%;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+  .container p {
+
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+   
+  }
+
+  .container h4 {
+    
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  table tr td {
+
+    font-size: 12px;
+    text-align: justify;
+    padding-top: 10px;
+  }
+
+  .bold {
+
+    font-weight: bold;
+  }
+
+  .signature {
+
+    width: 200px;
+    height:40px;
+  }
+
+  .adasign{
+
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+  }
+
+  
+/* the screen size is applicable to 1024 px and above */
+@media screen and (min-width: 1024px) {
+
+    header section {
+
+        width: 100%; 
+        /* sets the width into 100% when this media query declaration is set  */
+        height: 0;
+    }
+}
+
+@media screen and (min-width: 768px ) and (max-width: 1023px) {
+
+    /* changes is applicable to the sizes 768px up to 1023px  */
+
+    header {
+
+        position: relative;
+        width: 50%;
+        top: 100px;
+    }
+    section {
+
+        position: relative;
+        width: 50%;
+        left: 1px;
+        top: 100px;
+    }
+}
+
