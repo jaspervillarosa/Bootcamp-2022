@@ -1,0 +1,303 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+
+}
+
+body {
+
+    background-color: #EEF2E6;
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+
+    position: fixed;
+    background-color: #1C6758;
+    width: 100%;
+    height: 10%;
+}
+
+
+label.logo {
+
+    font-size: 25px;
+    color: #EEF2E6;
+    line-height: 100px;
+    padding: 0 50px;
+    /* font-weight: bold; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+nav ul {
+
+    float: right;
+    margin-right: 100px;
+
+}
+
+nav ul li {
+
+    display: inline-block;
+    line-height: 100px;
+    /* margin: 0 5px; */
+
+}
+
+nav ul li a {
+
+    color: #EEF2E6;
+    font-size: 18px;
+    text-transform: uppercase;
+    /* padding: 35px; */
+    padding:30px 25px;
+
+}
+
+a.active, a:hover {
+
+    background-color: #3D8361;
+    transition: 0.5s;
+}
+
+.checkbtn {
+
+    float: right;
+    color: #EEF2E6;
+    font-size: 30px;
+    line-height: 100px;
+    margin-right: 100px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+
+    display: none;
+}
+
+
+footer {
+
+    background-color: #3D8361;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 5%;
+    line-height: 50px;
+    color: #EEF2E6;
+}
+
+.hoshi {
+
+   position: absolute;
+   top: 130px;
+   left: 0;
+
+}
+
+.hoshiimg {
+
+    width: 155%;
+    height: 155%;
+
+}
+
+.intro {
+
+    position: relative;
+    top: 450px;
+    left: 900px;
+  
+}
+
+.intro h2 {
+
+    font-size: 50px;
+    color: #333333;
+}
+
+.intro h1 {
+
+    font-size: 120px;
+    color: #3D8361;
+    position: relative;
+    right: 20px;
+}
+
+.intro h3 {
+    font-size: 25px;
+    line-height: 50px;
+    color: #555555;
+}
+
+/* .intro p {
+
+    font-size: 15px;
+    color:#555555;
+    line-height: 20px;
+    font-weight: bold;
+    position: absolute;
+    right: 2300px;
+    top: 300px;
+} */
+
+.intro button {
+
+    display:inline-block;
+    padding: 15px 25px;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: left;
+    text-decoration: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: #D6CDA4;
+    border: none;
+    /* box-shadow: 0 9px navajowhite; */
+}
+
+.intro button:hover {
+
+    background-color: #3D8361;
+}
+
+@media screen and (max-width: 1024px ) {
+
+    label.logo{
+
+        font-size: 25px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+
+        font-size: 18px;
+        padding:35px 10px;
+    }
+
+     
+     .hoshiimg {
+     
+         width: 100%;
+         height: 100%;
+         position: relative;
+         top: 200px;
+         z-index: -1;
+     
+     }
+
+     .intro {
+
+        position: relative;
+        top: 250px;
+        left: 100px;
+        z-index: -1;
+      
+    }
+
+    .intro h2 {
+
+        font-size: 25px;
+        color: #333333;
+    }
+    
+    .intro h1 {
+    
+        font-size: 60px;
+        color: #3D8361;
+        position: relative;
+        right: 20px;
+    }
+    
+    .intro h3 {
+        font-size: 15px;
+        line-height: 50px;
+        color: #555555;
+    }
+    
+}
+
+
+@media  screen and (max-width: 868px ) {
+
+    
+    .checkbtn {
+        display:  block;
+     }
+
+
+ 
+    ul {
+
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #D6CDA4;
+        /* top: 100%; */
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+   
+    nav ul li a{
+
+        display: block;
+        padding: 0;
+        font-size: 20px;
+    }
+
+    a.active, a:hover{
+
+        background: none;
+        color: #1C6758;
+    }
+
+    #check:checked ~ ul {
+
+        /* top: 80px; */
+        left: 0;
+    }
+
+    .intro button {
+
+        display:inline-block;
+        padding: 15px 25px;
+        margin-top: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: left;
+        text-decoration: none;
+        outline: none;
+        border-radius: 15px;
+        background-color: #D6CDA4;
+        border: none;
+        transition: all .5s;
+
+        /* position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #D6CDA4;
+        /* top: 100%; */
+        /* left: -100%;
+        text-align: center; */ 
+       
+        /* box-shadow: 0 9px navajowhite; */
+    }
+    
+    .intro button:hover {
+
+        background-color: #3D8361;
+    }
+
+}
