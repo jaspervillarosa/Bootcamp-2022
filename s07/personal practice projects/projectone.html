@@ -50,9 +50,87 @@
 
                 <!-- <p>available for Hire</p> -->
 
-                <button type="button">CONTACT</button>
-
             </article>
+
+            <button class="buttonko" type="button" id="responsive">CONTACT</button>
+
+            <div id="myModal" class="modal">
+                <span class="close"> &times; </span>
+
+                <!-- <img class="modal-content" src="alak.png" alt="" id="contactform"> -->
+
+                <form action="/action_page.php" id="contactform" class="modal-content">
+                    <h1>CONTACT</h1>
+                    <h2>Available for Hire</h2>
+                    <p>Hey I'm 22 years old with a passion to  make your vision a reality. I'm available to shoot and/or edit videos/photos.</p>
+                    <div>
+                        <label for="fname" >Name</label>
+                        <input class="input"  type="text" id="fname" name="fname" placeholder="Your Name..." required><br><br>
+                        <label for="lname">Email</label>
+                        <input class="input"  type="email" id="lname" name="lname" placeholder="Your Email Address..." required><br><br>
+                        <label for="request">Tell me about your project</label><br><br>
+                        <textarea id="project" placeholder="Your message..." name="request" rows="4" cols="50" required></textarea><br><br>
+                        <label for="fname" >What's your budget?</label> <br> <br>
+                        <input class="input" type="text" id="budget" name="budget" placeholder="amount..." required><br><br>
+                        <button onclick="myFunction()">Submit</button>
+                        <input class="reset" type="reset" value="Reset">
+                    </div> 
+                  </form>
+            </div>
+
+            <script>
+
+                // var modal = document.getElementById("myModal")
+
+                // var button= document.getElementById("responsive")
+                // var contactform = document.getElementById("contactform")
+                // var captionText = document.getElementById("contactform")
+
+                // button.onclick = function (){
+
+                //     modal.style.display = "block";
+                //     contactform.src = this.src;
+                //     captionText.innerHTML = this.alt;
+                // }
+
+                // var span = document.getElementsByClassName("close")[0];
+
+                // span.onclick = function (){
+
+                //     modal.style.display = "none";
+                // }
+
+                 // gets the modal that pops up to the screen 
+
+        // step 1 get the modal 
+                    var modal = document.getElementById("myModal");
+
+                    // step 2: get the image and insert the it inside the modal. use "alt" text as caption
+
+                    var button = document.getElementById("responsive");
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("img01");
+
+                    // initialize the variables and var img 
+                    button.onclick = function()
+                    {
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        captionText.innerHTML = this.alt;
+                    }
+
+                    // step 3: get the span element that closes the modal 
+
+                    var span = document.getElementsByClassName("close")[0];
+
+                    //step 4: when the user clicks on <span/> (x), it close the modal.
+
+                    span.onclick = function (){
+
+                        modal.style.display = "none";
+                    }
+
+            </script>
 
             <figure class="hoshi">
 
