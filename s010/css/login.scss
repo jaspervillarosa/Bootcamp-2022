@@ -1,0 +1,163 @@
+@mixin logincontainer {
+
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    margin-top: 10%;
+    border-radius: 1rem;
+    box-shadow: 0.25rem 0.5rem;
+    // width: clamp(30%, 200px, 50%)
+    // min-height: 70%;
+}
+
+.container {
+
+    @include logincontainer;
+}
+
+@mixin formcontainer {
+
+    padding: 3rem;
+}
+
+.formcontainer {
+
+    @include formcontainer;
+}
+
+@mixin header{
+
+    display: flex;
+    justify-content: flex-start;
+    color: #555555;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+
+}
+
+p {
+
+    @include header;
+}
+
+@mixin button {
+
+    display: block;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: #fc6c85;
+    border: 1px solid #fc6c85;
+
+    &:hover {
+        background-color: #fc6c85;
+        border: 1px solid #fc6c85;
+        opacity: 0.7;
+    }
+}
+
+.formcontainer button {
+
+    @include button;
+}
+
+@mixin check{
+
+    background-color: #fc6c85;
+    color: #fc6c85;
+}
+
+#exampleCheck1{
+
+    @include check;
+}
+
+@mixin body {
+
+    background-color: #6FB2D2;
+}
+
+.badi {
+
+    @include body;
+}
+
+@mixin containericons {
+
+    // border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container_baba {
+
+    label {
+        padding-top: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    @include containericons;
+}
+
+@mixin icons {
+
+    padding: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-top: 1rem;
+
+
+}
+
+.fa-facebook {
+
+    @include icons;
+
+    background: #3B5998;
+    color: white;
+    border-radius: 20%;
+
+    &:hover {
+
+        color: white;
+        opacity: 0.5;
+        background-color: #3B5998;
+    }
+}
+
+ /* Twitter */
+ .fa-twitter {
+
+    @include icons;
+
+    background: #55ACEE;
+    color: white;
+    border-radius: 50%;
+
+    
+    &:hover {
+
+        color: white;
+        opacity: 0.5;
+        background-color: #55ACEE;
+    }
+  }
+
+  /* google  */
+  .fa-google {
+
+    @include icons;
+
+    background: #99344c;
+    color: white;
+    border-radius: 50%;
+
+    &:hover {
+
+        color: white;
+        opacity: 0.5;
+        background-color: #99344c;
+    }
+  }
+

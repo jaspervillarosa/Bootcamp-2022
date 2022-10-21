@@ -1,0 +1,82 @@
+@mixin body {
+
+    background-color: #333333;
+    
+    
+}
+
+.badi {
+
+    @include body;
+}
+
+@mixin servicerequestdiv {
+
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 1rem;
+    // width: 100%;
+    // min-height: 40%;
+    // display: block;
+}
+
+.container {
+
+    @include servicerequestdiv;
+}
+
+.container .label, .container .input {
+
+    // @include servicerequestdiv;
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.container .inputradio {
+
+    margin-top: 1rem;
+}
+@mixin textcolor {
+
+    color: whitesmoke;
+}
+
+p, label, .browsecolor {
+
+    @include textcolor;
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: .5rem;
+}
+
+
+@mixin icons {
+
+    padding: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-top: 1rem;
+
+
+}
+
+.fa-school {
+
+    @include icons;
+
+    background: #3B5998;
+    color: white;
+    border-radius: 20%;
+
+    &:hover {
+
+        color: white;
+        opacity: 0.5;
+        background-color: #3B5998;
+    }
+}

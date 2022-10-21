@@ -11,9 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     
 </head>
-<body>
+<body class="p-3 mb-2 bg-warning text-white" >
 
-    <main>
+    <main >
 
         <head>
 
@@ -53,7 +53,91 @@
                   </table>
             </article>
 
+            <article>
+              <a href="#" class="link-success">Success link</a>
+            </article>
+
+            <article class="p-3 mb-2 bg-success text-white">.bg-secondary</article>
+
+            <article>
+
+                    <figure>
+                      <blockquote class="blockquote">
+                        <p>A well-known quote, contained in a blockquote element.</p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                      </figcaption>
+                    </figure>
+
+                    <!-- it lets the content be in capitalized, uppercase or lowercase  -->
+                    <p class="text-capitalized ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores adipisci ab enim perspiciatis soluta laborum! Ex corporis delectus, recusandae autem aspernatur, commodi vitae sed assumenda aut, iure voluptate!
+                    </p>
+
+                    <p class="text-uppercase">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores adipisci ab enim perspiciatis soluta laborum! Ex corporis delectus, recusandae autem aspernatur, commodi vitae sed assumenda aut, iure voluptate!
+                  </p>
+
+                  <p class="fw-bold">Bold text.</p>
+                  <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+                  <p class="fw-semibold">Semibold weight text.</p>
+                  <p class="fw-normal">Normal weight text.</p>
+                  <p class="fw-light">Light weight text.</p>
+                  <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+                  <p class="fst-italic">Italic text.</p>
+                  <p class="fst-normal">Text with normal font style</p>
+
+                  <!-- text center and text end  -->
+                  <p class="text-center">Center aligned text on all viewport sizes.</p>
+                  <p class="text-end">End aligned text on all viewport sizes.</p>
+
+                  <!-- testing element  -->
+                  <!-- <span class="text-center">try this</span> -->
+                  <!-- text properties are not working on span element   -->
+
+                  <span class="d-block p-2 text-bg-success">Using span element to display properties</span>
+
+            </article>
         </section>
+
+        <h1>Testing a semantic element</h1>
+        <section class="text-bg-success">
+              using text element to highlight the text
+        </section>
+
+        <section class="text-justify">
+          
+          justify this Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda est enim alias consectetur beatae earum rem odio! Autem velit laudantium voluptatem assumenda magnam optio consequuntur ut asperiores. Perferendis, sapiente molestias! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis consequatur nisi et placeat, pariatur eaque dicta veritatis. Ducimus perferendis illo doloribus. Similique error repellat vitae reiciendis aliquid ea necessitatibus inventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis et sunt laboriosam obcaecati assumenda molestias tempore soluta facilis sint amet. Dolor perspiciatis ipsa sapiente est quae exercitationem! Quia, quibusdam fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque asperiores aliquam provident, minus vel expedita eaque aut repellendus, aperiam vitae consequuntur temporibus quis eligendi officia quidem illum quia, ad eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nulla tenetur ut in est. Repudiandae quas quod alias sapiente, quasi perferendis, beatae repellat quidem quisquam esse expedita optio, consectetur odio.
+
+        </section>
+
+        <section>
+          <div class="w-25 p-3" style="background-color: #eee;">Width 25%</div>
+          <div class="w-50 p-3" style="background-color: #eee;">Width 50%</div>
+          <div class="w-75 p-3" style="background-color: #eee;">Width 75%</div>
+          <div class="w-100 p-3" style="background-color: #eee;">Width 100%</div>
+          <div class="w-auto p-3" style="background-color: #eee;">Width auto</div>
+        </section>
+        <br> <br>
+       
+        <section>
+          <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+            <div class="h-25 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 25%</div>
+            <div class="h-50 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 50%</div>
+            <div class="h-75 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 75%</div>
+            <div class="h-100 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 100%</div>
+            <div class="h-auto d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height auto</div>
+          </div>
+        </section>
+
+         <!-- responsive image  -->
+         <section>
+          <img src="hoshi.png" class="img-fluid " alt="..." height="70%" width="70%">
+         </section>
+
+
+
 
     </main>
     

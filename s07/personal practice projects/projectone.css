@@ -100,7 +100,7 @@ footer {
 .hoshi {
 
    position: absolute;
-   top: 195px;
+   top: 260px;
    left: 0;
    /* width: 100%; */
 
@@ -350,7 +350,7 @@ footer {
          width: 100%;
          height: 100%;
          position: relative;
-         top: 130px;
+         top: 90px;
          z-index: -5;
      
      }
