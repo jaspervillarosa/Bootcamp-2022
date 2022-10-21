@@ -1,0 +1,11 @@
+@mixin section-two {
+
+    text-align: center;
+    border: 1px solid red;
+    
+}
+
+.sectiontwo {
+
+    @include section-two();
+}
