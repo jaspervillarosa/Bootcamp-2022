@@ -1,0 +1,45 @@
+.badi {
+  background-color: #333333;
+}
+
+.container {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 1rem;
+}
+
+.container .label, .container .input {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.container .inputradio {
+  margin-top: 1rem;
+}
+
+p, label, .browsecolor {
+  color: whitesmoke;
+}
+
+p {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.fa-school {
+  padding: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  background: #3B5998;
+  color: white;
+  border-radius: 20%;
+}
+.fa-school:hover {
+  color: white;
+  opacity: 0.5;
+  background-color: #3B5998;
+}/*# sourceMappingURL=requestform.css.map */

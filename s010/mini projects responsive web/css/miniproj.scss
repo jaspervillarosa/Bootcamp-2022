@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css? family=WorkSans&display=swap');
+
+@mixin root {
+  
+        --background: #EEEEEE;
+    
+}
+
+:root{
+    @include root;
+}
+
+
+@mixin general {
+
+        box-sizing: border-box;   
+}
+
+*, *::before, *::after{
+
+    @include general;
+}
+
+@mixin body{
+
+        margin: 0;
+        font-family: 'WorkSans', sans-serif;
+        background: var(--background);
+          
+}
+
+.badi {
+    @include body;
+}
+
+
+@mixin headerstyles {
+    background: var(--background);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+header {
+    
+    @include headerstyles;
+}
+
+@mixin logostyle {
+
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.logo {
+
+    @include logostyle;
+}
+
+@mixin navcontainer {
+
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    background: var(--background);
+    width: 100%;
+    transform: scale(1,0);
+    transform-origin: top ;
+    transition: transform 400ms ease-in-out;
+    // left: 0;
+}
+
+nav {
+
+    @include navcontainer;
+
+}
+
+@mixin navul {
+
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+nav ul {
+
+    @include navul;
+
+}
+
+@mixin navli {
+
+   margin-bottom: 1em;
+   margin-left: 1em;
+    
+}
+
+nav li {
+
+    @include navli;
+
+}
+
+@mixin nava {
+    
+    text-decoration: none;
+    color: #555555;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+ 
+
+    &:hover {
+
+        color: #DC5F00;
+    }
+     
+ }
+ 
+ nav a {
+ 
+     @include nava;
+ 
+ }
+
+ @mixin navigationtoggle {
+    
+    &:checked ~ nav{
+
+        transform: scale(1, 1);
+    }
+
+    &:checked ~ nav a {
+
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 300ms;
+    }
+    display: none;
+     
+ }
+ 
+.nav-toggle {
+ 
+     @include navigationtoggle;
+ 
+ }
+
+ 
+ @mixin navigationtogglelabel {
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 1em;
+    margin-top: 0.70em;
+    font-size: 1.5em;
+    color: #555555;
+   
+ }
+ 
+.nav-toggle-label {
+ 
+     @include navigationtogglelabel;
+ 
+ }
+
+ @mixin screensize{
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    header {
+
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    }
+
+    .logo {
+        grid-column: 2/ 3;
+    }
+
+    nav {
+
+        all: unset;
+        grid-column: 3/4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+
+        display: flex;
+    }
+
+    nav li {
+
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+
+    nav a {
+
+        opacity: 1;
+        position: relative;
+    }
+
+    // @mixin navpointer {
+
+    //     content: '';
+    //     display: block ;
+    //     height: 2px;
+    //     background: whitesmoke;
+    //     position: absolute;
+    //     border: 1px solid red;
+    // }
+    
+    // nav a::before {
+    
+    //     @include navpointer();
+    // }
+
+ }
+
+ @media screen and (min-width: 800px) {
+
+    @include screensize();
+ }
+
+ 
