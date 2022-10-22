@@ -40,6 +40,8 @@
     position: fixed;
     width: 100%;
     z-index: 10;
+    padding-top: 2%;
+    padding-bottom: 0.5%;
 }
 
 header {
@@ -51,11 +53,18 @@ header {
 
     margin: 1rem;
     font-size: 1.5rem;
+
 }
 
 .logo {
 
     @include logostyle;
+
+    a{
+        text-decoration: none;
+        font-weight: bold;
+        color: #333333;
+    }
 }
 
 @mixin navcontainer {
@@ -178,6 +187,7 @@ nav li {
 
         display: grid;
         grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+        
     }
 
     .logo {
@@ -191,6 +201,7 @@ nav li {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+      
     }
 
     nav ul {
@@ -210,21 +221,6 @@ nav li {
         position: relative;
     }
 
-    // @mixin navpointer {
-
-    //     content: '';
-    //     display: block ;
-    //     height: 2px;
-    //     background: whitesmoke;
-    //     position: absolute;
-    //     border: 1px solid red;
-    // }
-    
-    // nav a::before {
-    
-    //     @include navpointer();
-    // }
-
  }
 
  @media screen and (min-width: 800px) {
@@ -232,4 +228,212 @@ nav li {
     @include screensize();
  }
 
+@mixin forfooter {
+
+    background: var(--background);
+    color: #555555;
+    bottom: 0;
+    width: 100%;
+    min-height: 5%;
+    // position: fixed;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    
+    
+}
+
  
+.foot {
+
+    @include forfooter();
+}
+
+@mixin content {
+
+    text-align: center;
+   
+    color: #333333;
+    padding-top: 15rem;
+
+    h1 {
+        font-weight: bold;
+        font-size: 4rem;
+    }
+    .hire {
+        font-size: 2rem;
+        padding-bottom: 10rem;
+    }
+
+    
+    @media screen and (max-width: 48rem){
+
+        h1 {
+
+            display: inline-block;
+            font-size: 2rem;
+            
+            }
+        
+        .hire {
+
+            display: block;
+            font-size: 1rem;
+            padding-bottom: 4rem;
+        }
+
+    }
+
+    .secarticle {
+
+        padding-top: 4rem;
+    }
+    .firstarticle, .secarticle {
+
+      
+    
+        .wrap-container-card {
+            display: flex;
+            justify-content: center;
+            
+            
+        }
+    
+        .row-card{
+    
+            display: flex;
+            
+            // border: 1px solid #333333;
+            background-color: lightgray;
+         
+        }
+        
+        
+        .column-card-one {
+
+            width: 50%;
+            height: 50%;
+        }
+     
+
+        .column-card-two{
+            left: 0;
+            top: 0;
+            margin-left: 20%;
+            margin-top: 23%;
+        }
+    
+    
+        .card-body {
+    
+           
+            margin: auto;
+            padding: auto;
+           
+            h5 {
+                color: #555555;
+            }
+            span {
+                
+                text-decoration: none;
+                color: #555555;
+                font-size: 1rem;
+            }
+
+            .card-title {
+
+                display: inline
+            }
+
+            span {
+                display: block;
+            }
+        }
+    
+        .card-title {
+    
+            margin: 0;
+            padding: 0;
+            width: 5rem;
+           
+        }
+    }
+
+    
+}
+
+.secarticle .column-card-one {
+
+    position: relative;
+    left: 21%;
+
+    @media screen and  (max-width: 48rem){
+
+     left: 15.5%;
+
+
+    }
+}
+
+@mixin textsecarticle {
+
+    @media  screen and (max-width: 48rem) {
+        position: relative;
+        right: 35%;
+        top: 30px;
+        font-size: 0.95rem;
+    }
+  
+}
+
+.secarticle .card-title {
+
+    @include textsecarticle();
+}
+
+@mixin textsecarticle {
+
+    @media  screen and (max-width: 48rem) {
+
+        font-size: 0.95rem;
+    }
+  
+}
+
+.firstarticle .card-title {
+
+    @include textsecarticle();
+}
+
+
+
+.primary-content {
+
+    @include content();
+
+    @media screen and (max-width: 48rem) {
+
+        padding-top: 10rem;
+    }
+}
+
+@mixin hovercontent {
+
+    &:hover{
+
+        background-color: black;
+        opacity: 0.7;
+        .column-card-two {
+            color: darkgray;
+        }
+    }
+}
+
+.primary-content .row-card{
+
+
+    @include hovercontent();
+}
+
+
