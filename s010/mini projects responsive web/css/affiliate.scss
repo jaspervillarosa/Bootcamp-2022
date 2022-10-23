@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css? family=WorkSans&display=swap');
+
+
+@mixin root {
+  
+    --background: #EEEEEE;
+
+}
+
+@mixin section {
+
+        background: var(--background);
+        font-family: 'WorkSans', sans-serif;
+        
+
+        .container {
+
+            margin-top: 10rem;
+
+            @media  screen and (max-width: 48em) {
+                margin-top: 10rem;
+            }
+        }
+
+        .listBooks{
+
+            margin-top: 3rem;
+            display: flex;
+            text-decoration: none;
+            flex-wrap: wrap;
+            list-style-type: none;
+            gap: 2rem;
+            justify-content: center;
+            
+            
+        }
+
+        li a {
+
+            text-decoration: none;
+            color: #333333;
+
+            &:hover {
+
+                color: #DC5F00;
+            }
+        }
+        h4 {
+
+            font-weight: bold;
+            margin-top: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        h4, .titlepar {
+
+            display: flex;
+            justify-content: center;
+            padding-left: 1rem ;
+            padding-right: 1rem;
+            margin-top: 3rem;
+            
+        }
+        
+
+        .container {
+
+            display: flex;
+            justify-content: center;
+        
+            gap: 4em;
+
+            @media  screen and (max-width: 48em) {
+                flex-wrap: wrap;
+            }
+        }
+
+
+        .bookContainer img {
+
+            box-shadow: 10px 10px 20px #555555;
+
+            &:hover {
+                opacity: 0.5;
+                cursor: pointer;
+            }
+        }
+
+        .articleContainer {
+            
+            span {
+
+                font-weight: bold;
+            }
+
+            .forI {
+
+                font-style: italic;
+            }
+
+            table {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .review {
+
+                margin-top: 2rem;
+                .picandname {
+
+                    display: flex;
+                    gap: 1rem;
+                    font-weight: bold;
+                    align-items: flex-end;
+
+                    img {
+                        border-radius: 50%;
+                        height: 7%;
+                        width: 7%;
+                    }
+                }
+                
+                p {
+                    padding-top: 1rem;
+                }
+            }
+        }
+
+
+
+}
+
+section {
+
+    @media screen and (max-width:48em){
+        padding-top: 6rem;
+    }
+    padding-top: 13rem;
+    @include section();
+}
