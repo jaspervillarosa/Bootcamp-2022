@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css? family=WorkSans&display=swap");
+section {
+  padding-top: 13rem;
+  background: var(--background);
+  font-family: "WorkSans", sans-serif;
+}
+@media screen and (max-width: 48em) {
+  section {
+    padding-top: 6rem;
+  }
+}
+section .container {
+  margin-top: 10rem;
+}
+@media screen and (max-width: 48em) {
+  section .container {
+    margin-top: 10rem;
+  }
+}
+section .listBooks {
+  margin-top: 3rem;
+  display: flex;
+  text-decoration: none;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 2rem;
+  justify-content: center;
+}
+section li a {
+  text-decoration: none;
+  color: #333333;
+}
+section li a:hover {
+  color: #DC5F00;
+}
+section h4 {
+  font-weight: bold;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+section h4, section .titlepar {
+  display: flex;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 3rem;
+}
+section .container {
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+}
+@media screen and (max-width: 48em) {
+  section .container {
+    flex-wrap: wrap;
+  }
+}
+section .bookContainer img {
+  box-shadow: 10px 10px 20px #555555;
+}
+section .bookContainer img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+section .articleContainer span {
+  font-weight: bold;
+}
+section .articleContainer .forI {
+  font-style: italic;
+}
+section .articleContainer table {
+  width: 100%;
+  max-width: 100%;
+}
+section .articleContainer .review {
+  margin-top: 2rem;
+}
+section .articleContainer .review .picandname {
+  display: flex;
+  gap: 1rem;
+  font-weight: bold;
+  align-items: flex-end;
+}
+section .articleContainer .review .picandname img {
+  border-radius: 50%;
+  height: 7%;
+  width: 7%;
+}
+section .articleContainer .review p {
+  padding-top: 1rem;
+}/*# sourceMappingURL=affiliate.css.map */

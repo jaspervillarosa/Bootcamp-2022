@@ -1,45 +1,229 @@
-.badi {
-  background-color: #333333;
+@import url("https://fonts.googleapis.com/css? family=WorkSans&display=swap");
+header {
+  background-color: #1746A2;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  padding-top: 2%;
+  padding-bottom: 0.5%;
 }
 
-.container {
-  background-color: transparent;
-  border: 1px solid white;
+.logo {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+.logo a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFF7E9;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  background: var(--background);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FFF7E9;
+  font-weight: bold;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+nav a:hover {
+  color: #FF731D;
+}
+
+.nav-toggle {
+  display: none;
+}
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+  background: #1746A2;
+}
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 300ms;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 1em;
+  margin-top: 0.7em;
+  font-size: 1.5em;
+  color: #FFF7E9;
+}
+.nav-toggle-label:hover {
+  color: #FF731D;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+  .logo {
+    grid-column: 2/3;
+  }
+  nav {
+    all: unset;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+}
+.foot {
+  background: var(--background);
+  color: #1746A2;
+  bottom: 0;
+  width: 100%;
+  min-height: 5%;
+  top: 90rem;
+  text-align: center;
   padding: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+  position: absolute;
 }
 
-.container .label, .container .input {
-  display: block;
+.badi {
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #FFF7E9;
+  text-decoration: none;
+  list-style-type: none;
+}
+.badi .primaryContainer {
+  padding-top: 2rem;
+  width: 60%;
+  background-color: #FFF7E9;
+}
+.badi .primaryContainer .logo {
+  display: flex;
+  justify-content: center;
+}
+.badi .primaryContainer .fa {
+  text-decoration: none;
+  padding: 2.5rem;
+  border-radius: 50%;
+}
+.badi .primaryContainer .fa-comment {
+  background: #FF731D;
+  color: whitesmoke;
+  font-size: 2.5rem;
+}
+.badi .primaryContainer p, .badi .primaryContainer a {
+  display: flex;
+  justify-content: center;
+}
+.badi .primaryContainer p {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 4rem;
+  color: #1746A2;
+}
+.badi .primaryContainer a {
+  margin-top: 10rem;
+}
+.badi .primaryContainer .formContainer {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+@media screen and (max-width: 48rem) {
+  .badi .primaryContainer .formContainer {
+    position: relative;
+    right: 2rem;
+  }
+}
+.badi .primaryContainer .formContainer .container {
+  border: 0.25rem solid #FF731D;
+  border-radius: 2rem;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 48rem) {
+  .badi .primaryContainer .formContainer .container {
+    min-width: 120%;
+  }
+}
+.badi .primaryContainer .formContainer .container label {
+  margin-top: 1rem;
+  color: #1746A2;
+}
+.badi .primaryContainer .formContainer .container .input, .badi .primaryContainer .formContainer .container button, .badi .primaryContainer .formContainer .container .inputReset {
   width: 100%;
   margin-top: 1rem;
-}
-
-.container .inputradio {
-  margin-top: 1rem;
-}
-
-p, label, .browsecolor {
-  color: whitesmoke;
-}
-
-p {
-  font-size: 1.5rem;
-  text-align: center;
-  padding-top: 2rem;
+  background-color: #5F9DF7;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  color: black;
 }
-
-.fa-school {
-  padding: 1rem;
-  font-size: 2rem;
-  text-decoration: none;
+.badi .primaryContainer .formContainer .container button:hover, .badi .primaryContainer .formContainer .container .inputReset:hover {
+  background-color: #FF731D;
+  border: transparent;
+}
+.badi .primaryContainer .formContainer .container textarea {
+  width: 100%;
   margin-top: 1rem;
-  background: #3B5998;
-  color: white;
-  border-radius: 20%;
+  background-color: #5F9DF7;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: black;
 }
-.fa-school:hover {
-  color: white;
-  opacity: 0.5;
-  background-color: #3B5998;
+.badi .primaryContainer .formContainer .container select {
+  background-color: #5F9DF7;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: black;
+  width: 100%;
 }/*# sourceMappingURL=requestform.css.map */
