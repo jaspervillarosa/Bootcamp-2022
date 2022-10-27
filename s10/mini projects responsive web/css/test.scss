@@ -1,0 +1,10 @@
+@mixin body {
+
+    font-family: 'WorkSans', sans-serif;
+}
+
+.badi {
+
+    @include body();
+}
+@mix

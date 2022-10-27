@@ -130,12 +130,13 @@ nav a:hover {
   padding-bottom: 6rem;
 }
 
-.secarticle .column-card-one {
+.secarticle .column-card-one, .firstarticle .column-card-two {
   position: relative;
   left: 21%;
+  border: solid red;
 }
 @media screen and (max-width: 48rem) {
-  .secarticle .column-card-one {
+  .secarticle .column-card-one, .firstarticle .column-card-two {
     left: 15.5%;
   }
 }

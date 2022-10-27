@@ -362,10 +362,11 @@ nav li {
     
 }
 
-.secarticle .column-card-one {
+.secarticle .column-card-one, .firstarticle .column-card-two {
 
     position: relative;
     left: 21%;
+    border: solid red;
 
     @media screen and  (max-width: 48rem){
 
