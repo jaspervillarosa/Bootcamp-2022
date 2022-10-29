@@ -1,7 +1,8 @@
 :root {
 
-    --clr-accent-400: hsl(172, 100%, 29%);
+    --clr-accent-400: hsl(172, 100%, 19%);
     --clr-accent-100: hsl(172, 100%, 34%);
+    --clr-accent-50: hsl(172, 100%, 95%);
 
     --clr-primary-400: hsl(0, 0%, 0%);
     --clr-primary-100: hsl(0, 0%, 29%);
@@ -23,13 +24,15 @@
     --fs-400: .875rem;
     --fs-500: 0.9375rem;
     --fs-600: 1rem;
+    --fs-650: 1.25rem;
     --fs-700: 1.875rem;
-    --fs-800: 2.5rem;
-    --fs-900: 3.5rem;
+    --fs-800: 2rem;
+    --fs-900: 2.5rem;
 
 
     --fs-body: var(--fs-400);
-    --fs-primary-heading: var(--fs-800);
+    --fs-primary-heading: var(--fs-900);
+    --fs-secondary-heading: var(--fs-800);
     --fs-nav: var(--fs-500);
     --fs-button: var(--fs-300);
 
@@ -71,22 +74,25 @@
 
     // bg color 
     .bg-primary-400{
-        color: var(--clr-primary-400);
+        background-color: var(--clr-primary-400);
     }
     .bg-primary-100{
-        color: var(--clr-primary-100);
+        background-color: var(--clr-primary-100);
     }
     .bg-accent-400{
-        color: var(--clr-accent-400);
+        background-color: var(--clr-accent-400);
     }
     .bg-accent-100{
-        color: var(--clr-accent-100);
+        background-color: var(--clr-accent-100);
+    }
+    .bg-accent-50{
+        background-color: var(--clr-accent-50);
     }
     .bg-neutral-400{
-        color: var(--clr-neutral-400);
+        background-color: var(--clr-neutral-400);
     }
     .bg-neutral-100{
-        color: var(--clr-neutral-100);
+        background-color: var(--clr-neutral-100);
     }
 
     // font weights 
@@ -131,6 +137,10 @@
         font-size: var(--fs-600);
         
     }
+    .fs-650{
+        font-size: var(--fs-650);
+        
+    }
     .fs-700{
         font-size: var(--fs-700);
         
@@ -151,6 +161,98 @@
     *{
         font-family: var(--ff-body)
     }
+
+    .card-body-style {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: solid red;
+        min-height: 100%;
+    }
+
+    .compressed-container {
+
+        width: 100%;
+        border: solid blue;
+        display: flex;
+        justify-content: center;
+        min-height: 100%;
+    }
+
+    .btn-container-flex{
+        
+        display: flex;
+        gap: 1rem;
+    }
+
+    .btn-border-accent {
+
+        border: solid var(--clr-accent-100);
+    }
+
+    .carousel-img-size {
+
+        width: 65rem;
+        height: 35rem;
+        border-radius: 2rem;
+    }
+
+    span {
+
+        font-weight: var(--fw-bold);
+    }
+
+    //second section main page
+
+    .container-content-flex {
+
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+        border: solid blue;
+
+    }
+
+    .compressed-container-sm-section {
+
+        display: flex;
+        justify-content: space-between;
+        border: solid violet;
+        width: clamp(80%, 50%, 75%);
+        height: 3.5rem;
+        align-items: center;
+    }
+
+    // third section 
+    .wrapper {
+
+        border: solid yellow;
+        margin: 4rem 12rem;
+    }
+
+    .card-body-style-third-sec {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 2rem;
+
+        p{
+            line-height: 0.5rem;
+        }
+
+        .cost-style-margin-top {
+
+            margin-top: 2.5rem;
+        }
+    }
+
+
 }
 
 body {
