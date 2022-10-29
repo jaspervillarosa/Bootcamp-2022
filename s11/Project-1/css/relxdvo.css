@@ -19,7 +19,7 @@
   --fs-600: 1rem;
   --fs-650: 1.25rem;
   --fs-700: 1.875rem;
-  --fs-800: 2rem;
+  --fs-800: 1.5rem;
   --fs-900: 2.5rem;
   --fs-body: var(--fs-400);
   --fs-primary-heading: var(--fs-900);
@@ -160,23 +160,173 @@ body .compressed-container-sm-section {
   justify-content: space-between;
   border: solid violet;
   width: 80%;
-  height: 3.5rem;
+  height: 3rem;
   align-items: center;
+}
+body .wrapper-to-center {
+  display: flex;
+  align-items: center;
+  border: solid gold;
+  padding-top: 0.5rem;
 }
 body .wrapper {
   border: solid yellow;
   margin: 4rem 12rem;
 }
-body .card-body-style-third-sec {
+body .card-body-style-second-sec {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   line-height: 2rem;
 }
-body .card-body-style-third-sec p {
+body .card-body-style-second-sec p {
   line-height: 0.5rem;
 }
-body .card-body-style-third-sec .cost-style-margin-top {
+body .card-body-style-second-sec .cost-style-margin-top {
   margin-top: 2.5rem;
+}
+body .wrapper-third-section {
+  border: solid yellow;
+  margin: 4rem 8rem;
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  width: 80%;
+}
+body .img-third-section {
+  width: 80rem;
+  height: 25rem;
+}
+body .container-third-section {
+  border: solid blue;
+  display: flex;
+  justify-content: center;
+}
+body .card-body-style-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: solid orange;
+  align-items: center;
+}
+body .wrapper-fourth-section {
+  height: 10rem;
+  border: solid pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .content-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: solid orange;
+  align-items: center;
+  width: 75%;
+}
+body .carousel-img-size-fifth-section {
+  width: 70rem;
+  height: 25rem;
+  border-radius: 2rem;
+}
+body .compressed-container-fifth-section {
+  width: 100%;
+  border: solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+body .carousel-fifth-section .card-body-styles {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border: solid gold;
+}
+body .wrapper-sixth-section {
+  border: solid blueviolet;
+  display: flex;
+  justify-content: center;
+  height: 15rem;
+  flex-direction: column;
+  align-items: center;
+}
+body .container-sixth-section {
+  width: 100%;
+  border: solid indianred;
+  display: flex;
+  justify-content: center;
+}
+body .wrapper-second-half-sixth-section {
+  border: solid gold;
+  max-width: 80%;
+}
+body .FAQ-container {
+  border: solid red;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body .footer-container-to-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+body .column-container-wrapper {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  border: solid goldenrod;
+}
+body .column-even-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+  line-height: 1rem;
+}
+body footer a {
+  text-decoration: none;
+  color: var(--clr-primary-400);
+}
+body footer h5 {
+  color: var(--clr-accent-400);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-650);
+}
+body .container-second-half-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: solid indianred;
+  height: 5rem;
+}
+body .wrapper-second-half-footer {
+  width: 80%;
+  border: solid red;
+  display: flex;
+  align-items: center;
+}
+body .column-even-second-half-footer {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  line-height: 0.5rem;
+  align-items: center;
+}
+body .last-part-footer-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+body .wrapper-last-part-footer {
+  width: 60%;
+  border: solid blue;
+}
+body .column-even-last-part-footer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }/*# sourceMappingURL=relxdvo.css.map */
