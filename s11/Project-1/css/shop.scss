@@ -1,0 +1,14 @@
+@mixin body-shop-section {
+
+    .container-shop-first-section {
+
+        border: solid gold;
+        width: min(100% - 2rem, 80%);
+        margin-inline: auto;
+    }
+}
+
+body {
+
+    @include body-shop-section ();
+}

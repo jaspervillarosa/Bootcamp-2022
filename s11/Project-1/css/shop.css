@@ -1,0 +1,5 @@
+body .container-shop-first-section {
+  border: solid gold;
+  width: min(100% - 2rem, 80%);
+  margin-inline: auto;
+}/*# sourceMappingURL=shop.css.map */
