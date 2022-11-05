@@ -1,12 +1,14 @@
 :root {
   --clr-accent-400: hsl(172, 100%, 19%);
   --clr-accent-100: hsl(172, 100%, 34%);
-  --clr-accent-50: hsl(172, 100%, 95%);
-  --clr-accent-1400: hsl(49, 71%, 56%);
+  --clr-accent-50:rgb(242,247,246);
+  --clr-accent-1400: rgb(198,156,109);
   --clr-primary-400: hsl(0, 0%, 0%);
   --clr-primary-100: hsl(0, 0%, 29%);
+  --clr-primary-50: hsl(0, 0%, 89%);
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-neutral-400: hsl(0, 0%, 98%);
+  --clr-neutral-700: rgb(250,250,250);
   --ff-primary:"Montserrat", sans-serif;
   --ff-body: var(--ff-primary);
   --ff-heading: var(--ff-primary);
@@ -42,6 +44,9 @@ body .text-primary-400 {
 }
 body .text-primary-100 {
   color: var(--clr-primary-100);
+}
+body .text-primary-50 {
+  color: var(--clr-primary-50);
 }
 body .text-accent-400 {
   color: var(--clr-accent-400);

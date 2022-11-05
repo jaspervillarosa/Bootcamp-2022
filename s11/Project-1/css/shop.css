@@ -1,4 +1,133 @@
+body {
+  /* Three column layout */
+  /* Place text to the right */
+  /* Clear floats after the columns */
+  /* The bar container */
+  /* Individual bars */
+}
 body .container-shop-first-section {
+  border: solid gold;
+  width: min(100% - 2rem, 80%);
+  margin-inline: auto;
+}
+body .color-choices li a {
+  text-decoration: none;
+  border: solid var(--clr-primary-50);
+  border-width: 1px;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-weight: var(--fw-semi-bold);
+  color: var(--clr-primary-100);
+}
+body .quantity-counter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+body .color-choices a.activeLink, body .color-choices a:hover {
+  border: solid var(--clr-accent-100);
+  border-width: 2px;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-weight: var(--fw-semi-bold);
+  color: var(--clr-primary-100);
+}
+body .decrement {
+  border-radius: 10rem;
+  padding: 0.5rem;
+  border: transparent;
+}
+body .increment {
+  border-radius: 10rem;
+  padding: 0.5rem;
+  border: transparent;
+}
+body .shopLinks {
+  border: solid gold;
+  width: min(100% - 2rem, 80%);
+  margin-inline: auto;
+  font-size: var(--fs-700);
+  font-weight: var(--fw-bold);
+}
+body .shopLinks ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4rem;
+}
+body .shopLinks a {
+  text-decoration: none;
+  color: var(--clr-primary-100);
+}
+body .shopLinks a:hover, body .shopLinks a.active {
+  color: var(--clr-accent-100);
+  border-bottom: solid var(--clr-accent-100);
+  border-width: 5px;
+  padding-bottom: 1rem;
+}
+body .side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+body .middle {
+  margin-top: 10px;
+  float: left;
+  width: 20%;
+}
+body .right {
+  text-align: right;
+}
+body .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body .bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+body .bar-5 {
+  width: 96%;
+  height: 18px;
+  background-color: var(--clr-accent-1400);
+}
+body .bar-4 {
+  width: 3%;
+  height: 18px;
+  background-color: var(--clr-accent-1400);
+}
+body .bar-3 {
+  width: 1%;
+  height: 18px;
+  background-color: var(--clr-accent-1400);
+}
+body .bar-2 {
+  width: 0%;
+  height: 18px;
+  background-color: var(--clr-accent-1400);
+}
+body .bar-1 {
+  width: 0%;
+  height: 18px;
+  background-color: var(--clr-accent-1400);
+}
+body .wrapper-reviews .row {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  border: solid blue;
+}
+body .wrapper-reviews {
+  border: solid pink;
+  width: min(100% - 2rem, 80%);
+  margin-inline: auto;
+}
+body .wrapper-reviews {
   border: solid gold;
   width: min(100% - 2rem, 80%);
   margin-inline: auto;

@@ -40,7 +40,7 @@
                 <div class="row g-0" style="border: solid blue;">
                     <div class="col-md-4">
                       <img src="images/shop-section-1-1-img.webp" class="img-fluid rounded-start" alt="...">
-      
+
                       <div class="img-transition">
                           <div class="row row-cols-1 row-cols-md-3 g-4">
                               <div class="col">
@@ -67,24 +67,25 @@
                     <div class="col-md-8">
                       <div class="card-body">
                         <div class="container-shop-section-1">
-                          <h5>RELX Infinity Device </h5>
-                          <p>
+                          <h5 class="fs-primary-heading text-primary-400 fw-bold ">RELX Infinity Device </h5>
+                          <p class="fs-600 text-primary-100">
                               1 Device+1 Type-C Cable + 1 User Manual 
                           </p>
-                          <p>Compatible Pod: RELX Pod</p>
-                          <p><span class="fa fa-star text-accent-1400"></span>
+                          <p class="">Compatible Pod: RELX Pod</p>
+                          <h3 class="" style="display:flex;  width: 100%; border: solid blue;">
+                              <span class="fa fa-star text-accent-1400"></span>
                               <span class="fa fa-star text-accent-1400"></span>
                               <span class="fa fa-star text-accent-1400"></span>
                               <span class="fa fa-star text-accent-1400"></span>
                               <span class="fa fa-star text-accent-1400"></span> 
-                              54 Reviews
-                          </p>
-                          <h5> &#8369;1,250.00</h5>
+                              <p class="fs-secondary-heading text-primary-100" style="margin-left: 2rem;">54 Reviews</p> 
+                          </h3>
+                          <h5 class="fs-secondary-heading text-accent-400 fw-bold"> &#8369;1,250.00</h5>
       
-                          <div class="container-instruction">
+                          <div class="container-instruction bg-accent-50" style="display: flex; align-items: center; padding: 0.85rem; border-radius: 1rem;">
                               <div class="button-type">
-                                  <button class="bg-accent-400">
-                                      Bundle Promo
+                                  <button class="bg-accent-400 text-neutral-100" style="border-radius: 10px; border: transparent; padding: 0.5rem;">
+                                      Bundle <br> Promo
                                   </button>
                               </div>
                               <div class="instructions-content">
@@ -98,10 +99,10 @@
                         </div>
                         <h5></h5>
                         <div class="container-shop-section-1">
-                            <h5>Color</h5>
-                            <div class="color-choices">
-                                <ul>
-                                    <li><a href="">Black</a></li>
+                            <h5 class="fs-650 fw-semi-bold text-primary-400">Color</h5>
+                            <div class="color-choices" style=" margin-top: 1rem;">
+                                <ul style="display: flex; justify-content: flex-start; align-items: flex-start; list-style-type: none; gap: 1rem; flex-wrap: wrap; padding: 0;">
+                                    <li><a class="activeLink" href="">Black</a></li>
                                     <li><a href="">Red</a></li>
                                     <li><a href="">Silver</a></li>
                                     <li><a href="">Gold</a></li>
@@ -112,12 +113,15 @@
                                 </ul>
                             </div>
                             <div class="quantity-counter">
-                                <h5>Quantity</h5>
+                                <h5 class="fs-650 fw-bold text-primary-400">Quantity</h5>
                                
-                                <div class="quantity-counter">
-                                    <button id="counter-decrement" class="decrement">-</button>
-                                    <input id="counter-value" class="value" type="number" value="0">
-                                    <button id="counter-increment" class="increment">+</button>
+                                <div class="quantity-counter-content">
+                                    <button id="counter-decrement" class="decrement"><i class="fa-solid fa-minus"></i></button>
+                                    <label for="counter-value">
+                                      <input id="counter-value" class="value" type="number" value="0">
+                                    </label>
+                                  
+                                    <button id="counter-increment" class="increment"><i class="fa-solid fa-plus"></i></button>
                                   </div>
 
                                 <script>
@@ -140,56 +144,38 @@
                             </div>
                         </div>
                         <div class="container-shop-section-1">
-                            <h5>You May Also Like</h5>
+                            <h5 class="fs-6500 fw-bold fs-secondary-heading">You May Also Like</h5>
                             <div class="pods-choices-add-ons">
-                                <div class="row row-cols-1 row-cols-md-3 g-4">
-                                    <div class="col">
+                                <div class="row row-cols-1 row-cols-md-3 g-4" style="border: solid green;">
+                                    <div class="col" style="border: solid pink;">
                                         <div class="card">
                                           <img src="images/shop-section-1-sm-1-img.webp" class="card-img-top" alt="...">
-                                          <div class="card-body">
-                                              <h5>3% / Fresh Red</h5>
-                                              <p>&#8369;300.00</p>
-                                              <div class="counter-add-on">
+                                          <div class="card-body"  style="border: solid red; display: flex; justify-content:center; flex-direction: column; align-items: center;">
+                                              <h5 class="fs-600 fw-bold  text-primary-400">3% / Fresh Red</h5>
+                                              <p class="text-accent-400 fw-bold fs-600" style="margin: 0; border: solid red;">&#8369;300.00</p>
+                                              <div class="counter-add-on" style="margin: 0; border: solid green;">
                                                   <div class="quantity-counter">
-                                                      <button id="counter-decrement" class="decrement">-</button>
+                                                      <button id="counter-decrement" class="decrement"><i class="fa-solid fa-minus"></i></button></button>
                                                       <input id="counter-value-add-on" class="value" type="number" value="0">
-                                                      <button id="counter-increment-add-on" class="increment">+</button>
+                                                      <button id="counter-increment-add-on" class="increment"><i class="fa-solid fa-plus"></i></button>
                                                     </div>
                                               </div>
       
-                                              <!-- <script>
-                                                  var counterValue = document.querySelector("#counter-value-add-on");
-                                                   var counterIncrement = document.querySelector("#counter-increment-add-on");
-                                                   var counterDecrement = document.querySelector("#counter-decrement-add-on");
-                                                   var count = 0;
-               
-                                                   this.counterIncrement.addEventListener('click', () => {
-                                                   this.count++
-                                                   this.counterValue.setAttribute("value", count);
-                                                   });
-               
-                                                   this.counterDecrement.addEventListener('click', () => {
-                                                   this.count--
-                                                   this.counterValue.setAttribute("value", count);
-                                                   });
-               
-                                              </script>
-       -->
-                                              <button class="bg-accent-400" style="border-radius: 10px;">Add</button>
+                                              <button class="bg-accent-400 text-neutral-100" style="border-radius: 2rem; width: 100%; padding: 0.5rem; border: transparent;">Add</button>
                                           </div>
                                         </div>
                                       </div>
                                     <div class="col">
                                       <div class="card">
                                         <img src="images/shop-section-1-sm-2-img.webp" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5>3% / Fresh Red</h5>
-                                            <p>&#8369;300.00</p>
-                                            <div class="counter-add-on">
+                                        <div class="card-body" style="border: solid red; display: flex; justify-content:center; flex-direction: column; align-items: center;">
+                                            <h5 class="fs-600 fw-bold  text-primary-400">3% / Fresh Red</h5>
+                                            <p class="text-accent-400 fw-bold fs-600" style="border: solid red; margin: 0;">&#8369;300.00</p>
+                                            <div class="counter-add-on" style="border: solid green ; margin: 0;">
                                                 <div class="quantity-counter">
-                                                    <button id="counter-decrement" class="decrement">-</button>
+                                                    <button id="counter-decrement" class="decrement" ><i class="fa-solid fa-minus"></i></button></button>
                                                     <input id="counter-value-add-on" class="value" type="number" value="0">
-                                                    <button id="counter-increment-add-on" class="increment">+</button>
+                                                    <button id="counter-increment-add-on" class="increment"><i class="fa-solid fa-plus"></i></button>
                                                   </div>
                                             </div>
     
@@ -211,43 +197,26 @@
              
                                             </script>
     
-                                            <button class="bg-accent-400" style="border-radius: 10px;">Add</button>
+                                            <button class="bg-accent-400 text-neutral-100" style="border-radius: 2rem; width: 100%; padding: 0.5rem; border: transparent;">Add</button>
                                         </div>
                                       </div>
                                     </div>
                                     <div class="col">
                                       <div class="card">
-                                        <img src="images/shop-section-1-sm-3-img.webp" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5>3% / Fresh Red</h5>
-                                            <p>&#8369;300.00</p>
-                                            <div class="counter-add-on">
+                                        <img  src="images/shop-section-1-sm-3-img.webp" class="card-img-top" alt="...">
+                                        <div class="card-body" style="border: solid red; display: flex; justify-content:center; flex-direction: column; align-items: center;">
+                                            <h5 class="fs-600 fw-bold  text-primary-400">3% / Fresh Red</h5>
+                                            <p class="text-accent-400 fw-bold fs-600" style="margin: 0;">&#8369;300.00</p>
+                                            <div class="counter-add-on" style="margin: 0">
                                                 <div class="quantity-counter">
-                                                    <button id="counter-decrement" class="decrement">-</button>
+                                                    <button id="counter-decrement" class="decrement"><i class="fa-solid fa-minus"></i></button></button>
                                                     <input id="counter-value-add-on" class="value" type="number" value="0">
-                                                    <button id="counter-increment-add-on" class="increment">+</button>
+                                                    <button id="counter-increment-add-on" class="increment"><i class="fa-solid fa-plus"></i></button>
                                                   </div>
                                             </div>
+
     
-                                            <!-- <script>
-                                                var counterValue = document.querySelector("#counter-value-add-on");
-                                                 var counterIncrement = document.querySelector("#counter-increment-add-on");
-                                                 var counterDecrement = document.querySelector("#counter-decrement-add-on");
-                                                 var count = 0;
-             
-                                                 this.counterIncrement.addEventListener('click', () => {
-                                                 this.count++
-                                                 this.counterValue.setAttribute("value", count);
-                                                 });
-             
-                                                 this.counterDecrement.addEventListener('click', () => {
-                                                 this.count--
-                                                 this.counterValue.setAttribute("value", count);
-                                                 }); -->
-             
-                                            </script>
-    
-                                            <button class="bg-accent-400" style="border-radius: 10px;">Add</button>
+                                            <button class="bg-accent-400 text-neutral-100" style="border-radius: 2rem; width: 100%; padding: 0.5rem; border: transparent;">Add</button>
                                         </div>
                                       </div>
                                     </div>
@@ -263,9 +232,329 @@
         </div>
     </section>
 
-    <footer>
+    <section>
+        <div class="shopLinks">
+          <!-- <div class="wrapper"> -->
+            <ul>
+              <li><a class="active" href=""> Description</a></li>
+              <li><a href="">Review</a></li>
+            </ul>
+          <!-- </div> -->
+         
+        </div>
+    </section>
 
+    <section class="images-shop">
+    -->
+      <div><img src="images/shop-section-3-img.webp" alt=""></div>
+      <div><img src="images/shop-section-4-img.webp" alt=""></div>
+      <div><img src="images/shop-section-5-img.webp" alt=""></div>
+      <div><img src="images/shop-section-6-img.webp" alt=""></div>
+      <div><img src="images/shop-section-7-img.webp" alt=""></div>
+      <div><img src="images/shop-section-8-img.webp" alt=""></div>
+      <div><img src="images/shop-section-9-img.webp" alt=""></div>
+      
+    </section>
+
+    <section>
+      <div class="wrapper-reviews">
+        <div>
+          <h3 class="text-primary-400 fw-bold fs-secondary-heading" style="margin-top: 1.5rem; margin-bottom: 2rem;">Customer Reviews</h3>
+          <span class="fa fa-star text-accent-1400"></span>
+          <span class="fa fa-star text-accent-1400"></span>
+          <span class="fa fa-star text-accent-1400"></span>
+          <span class="fa fa-star text-accent-1400"></span>
+          <span class="fa fa-star text-accent-1400"></span> 
+          <h4 class="text-primary-100 fs-secondary-heading" style="margin-bottom: 2rem;" >Based on 80 Reviews</h4>
+
+      </div>
+      <div class="row">
+        <div class="container-row">
+          <!-- 5 star  -->
+          <div class="side">
+            <span class="fa fa-star text-accent-1400"></span>
+            <span class="fa fa-star text-accent-1400"></span>
+            <span class="fa fa-star text-accent-1400"></span>
+            <span class="fa fa-star text-accent-1400"></span>
+            <span class="fa fa-star text-accent-1400"></span> 
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>77</div>
+          </div>
+  
+        </div>
+        <div class="container-row">
+          <!-- 4 star  -->
+        <div class="side">
+          <span class="fa fa-star text-accent-1400"></span>
+          <span class="fa fa-star text-accent-1400"></span>
+          <span class="fa fa-star text-accent-1400"></span>
+          <span class="fa fa-star text-accent-1400"></span>
+          <span class="fa fa-star text-primary-50"></span> 
+        </div>
+        <div class="middle">
+          <div class="bar-container">
+            <div class="bar-4"></div>
+          </div>
+        </div>
+        <div class="side right">
+          <div>2</div>
+        </div>
+        </div>
+
+        <div class="container-row">
+           <!-- 3 star  -->
+        <div class="side">
+          <span class="fa fa-star text-accent-1400"></span>
+          <span class="fa fa-star text-accent-1400"></span>
+          <span class="fa fa-star text-accent-1400"></span>
+          <span class="fa fa-star text-primary-50"></span>
+          <span class="fa fa-star text-primary-50"></span> 
+        </div>
+        <div class="middle">
+          <div class="bar-container">
+            <div class="bar-3"></div>
+          </div>
+        </div>
+        <div class="side right">
+          <div>1</div>
+        </div>
+        </div>
+        <div class="container-row">
+             <!-- 2 star  -->
+        <div class="side">
+          <span class="fa fa-star text-accent-1400"></span>
+          <span class="fa fa-star text-accent-1400"></span>
+          <span class="fa fa-star text-primary-50"></span>
+          <span class="fa fa-star text-primary-50"></span>
+          <span class="fa fa-star text-primary-50"></span> 
+        </div>
+        <div class="middle">
+          <div class="bar-container">
+            <div class="bar-2"></div>
+          </div>
+        </div>
+        <div class="side right">
+          <div>0</div>
+        </div>
+        </div>
+        <div class="container-row">
+                
+        <!-- 1 star  -->
+        <div class="side">
+          <span class="fa fa-star text-accent-1400"></span>
+          <span class="fa fa-star text-primary-50"></span>
+          <span class="fa fa-star text-primary-50"></span>
+          <span class="fa fa-star text-primary-50"></span>
+          <span class="fa fa-star text-primary-50"></span> 
+        </div>
+        <div class="middle">
+          <div class="bar-container">
+            <div class="bar-1"></div>
+          </div>
+        </div>
+        <div class="side right">
+          <div>0</div>
+        </div>
+        
+      </div>
+      </div>
+        </div>
+     
+    </section>
+
+    <!-- 1st review  -->
+    <section class="wrapper-reviews">
+      <div class="bigger-wrapper-review" style="width: clamp(20%, 30%); border: solid orange;">
+        <div style="display: flex; gap: 2rem;">
+          <div style=" display:flex; align-items:center; justify-content:center; border: solid blue;"><img src="images/hoshi.jpg" alt="hoshi" style="border-radius: 50%; width: 5rem; height: 5rem;"></div>
+          <div>
+            <div style="display: flex; gap: 1rem; margin-bottom: 0; padding-bottom: 0; border: solid palegoldenrod;">
+              <div class="container-review">
+                <span class="fa fa-star text-accent-1400"></span>
+                <span class="fa fa-star text-accent-1400"></span>
+                <span class="fa fa-star text-accent-1400"></span>
+                <span class="fa fa-star text-accent-1400"></span>
+                <span class="fa fa-star text-accent-1400"></span> 
+              </div>
+          
+              <p>11/03/22</p>
+             
+            </div>
+            <div style="margin: 0; padding: 0; border: solid blue;">
+              <h3 class="fs-650" > 
+                <span class="text-neutral-100 bg-accent-100 fs-300 fw-regular" style="padding: 0.25rem;">Verified</span> Customer
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div >
+          <h3 class="text-primary-100 fs-600" style="display: flex; margin-top: 1.5rem;"  >RELX 1+1 Essential Starter Kit</h3>
+        </div>
+      </div>
+      
+    </section>
+
+     <!-- 2nd review  -->
+     <section class="wrapper-reviews">
+      <div class="bigger-wrapper-review" style="width: clamp(20%, 30%); border: solid orange;">
+        <div style="display: flex; gap: 2rem;">
+          <div style=" display:flex; align-items:center; justify-content:center; border: solid blue;"><img src="images/hoshi.jpg" alt="hoshi" style="border-radius: 50%; width: 5rem; height: 5rem;"></div>
+          <div>
+            <div style="display: flex; gap: 1rem; margin-bottom: 0; padding-bottom: 0; border: solid palegoldenrod;">
+              <div class="container-review">
+                <span class="fa fa-star text-accent-1400"></span>
+                <span class="fa fa-star text-accent-1400"></span>
+                <span class="fa fa-star text-accent-1400"></span>
+                <span class="fa fa-star text-accent-1400"></span>
+                <span class="fa fa-star text-accent-1400"></span> 
+              </div>
+          
+              <p>10/25/22</p>
+             
+            </div>
+            <div style="margin: 0; padding: 0; border: solid blue;">
+              <h3 class="fs-650" > 
+                <span class="text-neutral-100 bg-accent-100 fs-300 fw-regular" style="padding: 0.25rem;">Verified</span> Customer
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div >
+          <h3 class="text-primary-100 fs-600" style="display: flex; margin-top: 1.5rem;"  >Kahit di ako pinayagan ng jowa ko gamitin ginamit ko parin</h3>
+        </div>
+      </div>
+      
+    </section>
+
+     <!-- 3rd review  -->
+     <section class="wrapper-reviews">
+      <div class="bigger-wrapper-review" style="width: clamp(20%, 30%); border: solid orange;">
+        <div style="display: flex; gap: 2rem;">
+          <div style=" display:flex; align-items:center; justify-content:center; border: solid blue;"><img src="images/hoshi.jpg" alt="hoshi" style="border-radius: 50%; width: 5rem; height: 5rem;"></div>
+          <div>
+            <div style="display: flex; gap: 1rem; margin-bottom: 0; padding-bottom: 0; border: solid palegoldenrod;">
+              <div class="container-review">
+                <span class="fa fa-star text-accent-1400"></span>
+                <span class="fa fa-star text-accent-1400"></span>
+                <span class="fa fa-star text-accent-1400"></span>
+                <span class="fa fa-star text-accent-1400"></span>
+                <span class="fa fa-star text-accent-1400"></span> 
+              </div>
+          
+              <p>10/21/22</p>
+             
+            </div>
+            <div style="margin: 0; padding: 0; border: solid blue;">
+              <h3 class="fs-650" > 
+                <span class="text-neutral-100 bg-accent-100 fs-300 fw-regular" style="padding: 0.25rem;">Verified</span> Customer
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div >
+          <h3 class="text-primary-100 fs-600" style="display: flex; margin-top: 1.5rem;"  >In comparison with heated tobacco, I think RELX is better in terms experience since you cannot feel any heat while using it and the pod taste is better considering there’s also nicotine in it. Its a worth it product.</h3>
+        </div>
+      </div>
+      
+    </section>
+
+
+
+    <!-- footer  -->
+    <footer class="primary-footer bg-neutral-400" style="margin-top: 4rem;">
+      <!-- first half of footer  -->
+      <div class="footer-container-to-center">
+        <div class="column-container-wrapper" style="border: solid red; margin-top: 4rem;">
+          <div class="column-even-footer" >
+            <div>
+              <h5>Support Center</h5>
+              <p><a href="">FAQ</a></p>
+              <p><a href="">Contact Us</a></p>
+              <p><a href="">Authentication</a></p>
+              <p><a href="">Warranty</a></p>
+              <p><a href="">Store DVO</a></p>
+              <p><a href="">Online Resellers</a></p>
+            </div>
+            <div>
+              <h5>RELX Product</h5>
+              <p><a href="">RELX Infinity</a></p>
+              <p><a href="">RELX Essential</a></p>
+              <p><a href="">RELX Artisan</a></p>
+              <p><a href="">RELX Pod</a></p>
+              <p><a href="">Infinity Charging Case</a></p>
+            </div>
+            <div>
+              <h5>RELX Program</h5>
+              <p><a href="">RELXDVO Affiliate</a></p>
+              <p><a href="">Refer a Friend</a></p>
+              <p><a href="">Partnership Opportunity</a></p>
+            </div>
+            <div>
+              <h5>Newsroom</h5>
+              <p><a href="">Vape Knowledge</a></p>
+              <p><a href="">Product Information</a></p>
+            </div>
+          </div>
+          <div class="email-column-div">
+            <div>
+              <h5>Subscribe to get a 10% off coupon</h5>
+              <label for="exampleInputEmail1" class="form-label">Get all the latest information on news and sales</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address ">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      
+        <!-- second half of footer  -->
+        <div class="container-second-half-footer">
+          <div class="wrapper-second-half-footer">
+            <div class="column-even-second-half-footer">
+              <div>
+                <h5>RELXDVO</h5>
+              </div>
+              <div>
+                <p>&copy;2022 RELXDVO LIMITED</p>
+                <p>All Rights Reserved</p>
+              </div>
+              <div>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+              </div>
+              <div>
+                <h5>support@relxdvo.com</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- last part of footer  -->
+        <div class="last-part-footer-container">
+          <div class="wrapper-last-part-footer">
+            <div >
+              <p class="text-primary-100 fs-300 text-center" >Warning: The sale or distribution of Vaporized Nicotine and Non-Nicotine Products to or by persons below eighteen (18) years of age is illegal. These products are harmful and contain nicotine which is a highly addictive substance. It is not recommended for use by nonsmokers.</p>
+              <div class="column-even-last-part-footer">
+                <div>
+                  <p class="text-primary-100 fs-300"><a href="">Privacy Policy & Cookie Notice</a></p>
+                </div>
+                <div>
+                  <p class="text-primary-100 fs-300"><a href="">Terms & Conditions</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     
+      
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
