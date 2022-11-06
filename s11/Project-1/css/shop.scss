@@ -2,7 +2,6 @@
 
     .container-shop-first-section {
 
-        border: solid gold;
         width: min(100% - 2rem, 80%);
         margin-inline: auto;
     }
@@ -18,6 +17,121 @@
 
         
 
+    }
+
+    .img-transition .card {
+
+        &:hover{
+            border: solid var(--clr-accent-100);
+
+        }
+    }
+
+    .counter-content {
+
+        display: flex;
+        gap: 2rem;
+
+    }
+    .counter button {
+
+       border: transparent;
+       border-radius: 50%;
+       padding-inline: 1.25rem;
+       padding-block: 1rem;
+       
+       
+    }
+
+    .counter h3 {
+
+        margin-top: 0.5rem;
+    }
+
+    // .container-shop-section-1 img {
+
+    //     width: 10rem;
+    //     height: 10rem;
+    //     border: solid gold;
+       
+    // } 
+
+    // .container-shop-section-1 col {
+
+    //     display: flex;
+    //     justify-content: center;
+    //     margin-right: 5rem;
+    //     align-items: center;
+    // }
+
+    // first-counter-pods 
+    .counter-content-one {
+
+        display: flex;
+        gap: 2rem;
+
+    }
+    .counter-1 button {
+
+       border: transparent;
+       border-radius: 50%;
+       padding-inline: 1.25rem;
+       padding-block: 1rem;
+       
+       
+    }
+
+    .counter-1 h3 {
+
+        margin-top: 0.5rem;
+    }
+
+    // second-counter-pods 
+
+      
+    .counter-content-second {
+
+        display: flex;
+        gap: 2rem;
+
+    }
+    .counter-2 button {
+
+       border: transparent;
+       border-radius: 50%;
+       padding-inline: 1.25rem;
+       padding-block: 1rem;
+       
+       
+    }
+
+    .counter-2 h3 {
+
+        margin-top: 0.5rem;
+    }
+    
+     // third-counter-pods 
+
+      
+     .counter-content-three {
+
+        display: flex;
+        gap: 2rem;
+
+    }
+    .counter-3 button {
+
+       border: transparent;
+       border-radius: 50%;
+       padding-inline: 1.25rem;
+       padding-block: 1rem;
+       
+       
+    }
+
+    .counter-3 h3 {
+
+        margin-top: 0.5rem;
     }
 
     .quantity-counter {
@@ -62,7 +176,6 @@
     
     .shopLinks {
 
-        border: solid gold;
         width: min(100% - 2rem, 80%);
         margin-inline: auto;
         font-size: var(--fs-700);
@@ -142,31 +255,23 @@
 
             width: 50%;
             display: flex;
-            justify-content: flex-start;
-            border: solid blue;    
+            justify-content: flex-start;  
             }
         
             .wrapper-reviews {
 
-                border: solid pink;
                 width: min(100% - 2rem, 80%);
                  margin-inline: auto;
             }
 
             .wrapper-reviews {
 
-                border: solid gold;
                 width: min(100% - 2rem, 80%);
                 margin-inline: auto;
        
             }
             
     }
-
-    
-
-  
-
 
 
 body {

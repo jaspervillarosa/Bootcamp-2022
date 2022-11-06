@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nosifer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:wght@400;500;700&family=Nosifer&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
     <!-- for the hamburger  -->
     <link href="dist/hamburgers.css" rel="stylesheet">
 
@@ -38,35 +40,54 @@
     </header> -->
 
     <header class="primary-header">
-      <div class="wrapper-header">
-        <h1 class="logo"><a href="#"> RELXDVO</a> </h1>
+<!-- 
+      <div class="warning">
+        <p></p>
+      </div> -->
 
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <div class="wrapper-header">
+        <h1 class="logo"><a href="#"> <img src="images/relx.png" alt="relx-img"></a> </h1>
+
+          <!-- <input type="checkbox" id="nav-toggle" class="nav-toggle"> -->
+    
+          <nav class="first-nav">
+              <ul>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT</a></li>
+                
+              </ul>
+          </nav>
   
-        <nav>
+          <nav class="sec-nav">
             <ul>
-              <li><a href="#">SHOP</a></li>
-              <li><a href="#">ABOUT US</a></li>
-              <li><a href="#">CONTACT</a></li>
-              <li><a href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+              <li><a href=""><i class="fa fa-solid fa-magnifying-glass"></i></a></li>
+              <li><a href=""><i class="fa fa-regular fa-user"></i></a></li>
+                <li><a href="#"><i class="fa fa-solid fa-cart-shopping"></i></a></li>
             </ul>
-        </nav>
-  
-        <label for="nav-toggle" class="nav-toggle-label">
-            <i class="fa fa-bars"></i>
-        </label>
+          </nav>
+    
+          <!-- <label for="nav-toggle" class="nav-toggle-label">
+              <i class="fa fa-bars"></i>
+          </label> -->
+       
       </div>
+      <div class="shipping text-primary-100 fs-600 bg-primary-50">
+        <p>
+          Free shipping on orders checkout value above PHP 1,000. See details. >
+        </p>
+    </div>
       
   </header>
 
   
-    <section class="carousel-section-main" style="padding-top: 10rem;">
+    <section class="carousel-section-main" style="padding-top: 0rem;">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner carousel-container-center" >
               <div class="carousel-item active ">
                 <div class="compressed-container">
                     <div class="card mb-3" style="max-width: 100%;">
-                        <div class="row g-0" style="border: solid green;" >
+                        <div class="row g-0"  >
                             
                             <div class="col-md-6">
                                 <div class="card-body card-body-style">
@@ -75,7 +96,7 @@
                                     <h5 class="text-primary-100 fs-700">1 Infinity Device+1 Pod</h5>
                                     <h5 class="text-primary-100 fs-700 fw-bold">Only for <span>PHP 888</span> </h5>
         
-                                    <button  type="button" class="bg-accent-100 text-neutral-100 fw-bold"
+                                    <button  type="button" class="regular-button bg-accent-100 text-neutral-100 fw-bold"
                                                 style="border-radius: 30px; border: transparent; padding: 1rem; ">
                                         Shop Now
                                     </button>
@@ -95,7 +116,7 @@
               <div class="carousel-item" >
                 <div class="compressed-container">
                     <div class="card mb-3" style="max-width: 100%;">
-                        <div class="row g-0" style="border: solid green;" >
+                        <div class="row g-0">
                             
                             <div class="col-md-6">
                                 <div class="card-body card-body-style">
@@ -103,7 +124,7 @@
                                     <h5 class="card-title text-primary-400 fs-primary-heading fw-bold ">RELX ARTISAN</h5>
                                     <h5 class="text-primary-100 fs-700">TRUE CRAFTMANSHIP LASTS</h5>
         
-                                    <button  type="button" class="bg-accent-100 text-neutral-100 fw-bold"
+                                    <button  type="button" class="regular-button bg-accent-100 text-neutral-100 fw-bold"
                                                 style="border-radius: 30px; border: transparent; padding: 1rem; ">
                                         Shop Now
                                     </button>
@@ -119,7 +140,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="compressed-container" style="border: solid green; " >
+                <div class="compressed-container">
                     <div class="card mb-3" style="max-width: 100%;">
                         <div class="row g-0">
                             
@@ -130,11 +151,11 @@
                                     <h5 class="text-primary-100 fs-700">UP TO 45% OFF</h5>
                                     
                                     <div class="btn-container-flex">
-                                        <button  type="button" class="btn-border-accent text-accent-100 fw-bold bg-neutral-100"
+                                        <button  type="button" class="special-button btn-border-accent text-accent-100 fw-bold bg-neutral-100"
                                                 style="border-radius: 30px; padding: 1rem;">
                                             Infinity Bundle
                                         </button>
-                                        <button  type="button" class="bg-accent-100 text-neutral-100 fw-bold"
+                                        <button  type="button" class="regular-button bg-accent-100 text-neutral-100 fw-bold"
                                                     style="border-radius: 30px; border: transparent; padding: 1rem; ">
                                             Essential Bundle
                                         </button>
@@ -244,7 +265,7 @@
               <div class="card-body card-body-style-section">
                 <h5 class="card-title fs-primary-heading fw-bold text-primary-400">RELX CLUB</h5>
                 <p class="card-text text-primary-100 fs-650">Invite friends get 3 pods for piece of 2 &#8369;600</p>
-                <p class="text-accent-100 fw-bold fs-650">Refer Now ></p>
+                <p class=" third-section-hover text-accent-100 fw-bold fs-650">Refer Now ></p>
               </div>
                 <img src="images/section-2-1-img.webp" class="card-img-top img-third-section img-fluid rounded-top"  style="border-radius: 2rem;" alt="...">
   
@@ -256,7 +277,7 @@
               <div class="card-body card-body-style-section">
                 <h5 class="card-title fs-primary-heading fw-bold text-primary-400">RELX QUALITY</h5>
                 <p class="card-text text-primary-100 fs-650">See our suggestion</p>
-                <p class="text-accent-100 fw-bold fs-650">Learn More ></p>
+                <p class=" third-section-hover text-accent-100 fw-bold fs-650">Learn More ></p>
               </div>
                   <img src="images/section-2-2-img.webp" class="card-img-top img-third-section img-fluid rounded-top"  style="border-radius: 2rem;" alt="...">
   
@@ -289,16 +310,16 @@
         <div class="carousel-inner">
           <div class="carousel-item active" >
              <div class="compressed-container-fifth-section">
-                    <div class="card mb-3" style="max-width: 80%; border: solid green; display: flex; justify-content: center; align-items:center;">
+                    <div class="card mb-3" style="max-width: 80%; display: flex; justify-content: center; align-items:center;">
                         <div class="row g-0" >
                             
                             <div class="col-md-6" style="display: flex; align-items: center;">
-                                <div class="card-body" style="display: flex; flex-direction: column; justify-content: center; border: solid blue; align-items: flex-start;" >
+                                <div class="card-body" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;" >
                                     <h5 class="fs-700 fw-bold text-primary-400 ">RELX DVO Store</h5>
                                     <h5 class="card-title text-primary-100 fs-650 fw-bold ">WHY RELX?</h5>
                                     <p class="text-primary-100 fs-600 ">Even before the first transaction, we provide dedicated support and resources.</p>
                                     <p class="text-primary-100 fs-600 ">Our dedicated RELX team provides local support to help the business be sustainable. </p>
-                                    <p class="text-accent-100 fw-bold fs-600">Explore Now <i class="fa-solid fa-arrow-right"></i></p>
+                                    <p class="fifth-section-hover text-accent-100 fw-bold fs-600">Explore Now <i class="fa-solid fa-arrow-right"></i></p>
                                 </div>
                             </div>
 
@@ -320,7 +341,7 @@
                                 <div class="card-body" style="display: flex; flex-direction: column; justify-content: center; border: solid blue; align-items: flex-start;" >
                                     <h5 class="fs-700 fw-bold text-primary-400 ">Verify Your Product</h5>
                                     <h5 class="card-title text-primary-100 fs-600  ">Scan the QR Code via your phone camera to verify your device and pod.</h5>
-                                    <p class="text-accent-100 fw-bold fs-600">Explore Now <i class="fa-solid fa-arrow-right"></i></p>
+                                    <p class="fifth-section-hover text-accent-100 fw-bold fs-600">Explore Now <i class="fa-solid fa-arrow-right"></i></p>
                                 </div>
                             </div>
 
@@ -335,15 +356,15 @@
           </div>
           <div class="carousel-item" >
              <div class="compressed-container-fifth-section">
-                    <div class="card mb-3" style="max-width: 80%; border: solid green; display: flex; justify-content: center; align-items:center;">
+                    <div class="card mb-3" style="max-width: 80%; display: flex; justify-content: center; align-items:center;">
                         <div class="row g-0" >
                             
                             <div class="col-md-6 " style="display: flex; align-items: center;">
-                                <div class="card-body"  style="display: flex; flex-direction: column; justify-content: center; border: solid blue; align-items: flex-start;" >
+                                <div class="card-body"  style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;" >
                                     <h5 class="fs-700 fw-bold text-primary-400 ">RELX Supersmooth</h5>
                                     <p class="text-primary-100 fs-600">RELX Super Smooth is our performance standard and was created with over 100 R&D scientists from the RELX Lab through 76 sesnsory tests adjustments which quantified smoothness through 5 performance indicators  </p>
         
-                                    <p class="text-accent-100 fw-bold fs-600">Explore Now <i class="fa-solid fa-arrow-right"></i></p>
+                                    <p class="fifth-section-hover text-accent-100 fw-bold fs-600">Explore Now <i class="fa-solid fa-arrow-right"></i></p>
                                 </div>
                             </div>
 
@@ -374,12 +395,12 @@
         <div class="wrapper-sixth-section">
           <h5 class="text-primary-400 fw-bold fs-primary-heading">We'd like to share some tips with you</h5>
           <p class="text-primary-400 fs-secondary-heading">Check out the answers to the most asked questions</p>
-          <p class="text-accent-100 fw-bold fs-secondary-heading">View All ></p>
+          <p class="sixth-section-hov text-accent-100 fw-bold fs-secondary-heading">View All ></p>
         </div>
     </section>
 
     <!-- second half of sixth section  -->
-    <section class="secon-half-sixth-section">
+    <section class="second-half-sixth-section">
       <div class="container-sixth-section">
         <div class="wrapper-second-half-sixth-section">
           <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -390,7 +411,7 @@
                   <div class="card-body">
                     <h5 class="card-title text-accent-100 fs-secondary-heading fw-bold">What is a RELX Breeze Device?</h5>
                     <p class="card-text text-primary-100 fs-600">RELX Breeze device is a great start for those who want to switch to vaping. Get to know all... </p>
-                    <p class="text-accent-100 fw-bold fs-600">Learn more <i class="fa-solid fa-arrow-right"></i></p>
+                    <p class="sev-section-hover text-accent-100 fw-bold fs-600">Learn more <i class="fa-solid fa-arrow-right"></i></p>
                   </div>
                 </div>
               </div>
@@ -400,7 +421,7 @@
                   <div class="card-body">
                     <h5 class="card-title text-accent-100 fs-secondary-heading fw-bold">10 New and Exciting RELX Flavors to Try</h5>
                     <p class="card-text text-primary-100 fs-600">Step up your day with new RELX flavors, from ice-cool to tropical tastes. Find your favorite...</p>
-                    <p class="text-accent-100 fw-bold fs-600">Learn more <i class="fa-solid fa-arrow-right"></i></p>
+                    <p class="sev-section-hover text-accent-100 fw-bold fs-600">Learn more <i class="fa-solid fa-arrow-right"></i></p>
                   </div>
                 </div>
               </div>
@@ -410,7 +431,7 @@
                   <div class="card-body">
                     <h5 class="card-title text-accent-100 fs-secondary-heading fw-bold">How to Buy Authentic Vape Products Online at RELX DVO </h5>
                     <p class="card-text text-primary-100 fs-600">Here's how to navigate the RELXDVO website and learn more about the products...</p>
-                    <p class="text-accent-100 fw-bold fs-600">Learn more <i class="fa-solid fa-arrow-right"></i></p>
+                    <p class="sev-section-hover text-accent-100 fw-bold fs-600">Learn more <i class="fa-solid fa-arrow-right"></i></p>
                   </div>
                 </div>
               </div>
@@ -422,8 +443,8 @@
     </section>
 
     <section class="accordion-section">
-      <div class="container-accordion-to-center" style="border: solid blue; width: 100%; display: flex; justify-content: center; align-items:center; min-height: 25rem;">
-        <div class="wrapper-accordion" style="border: solid gold; width: 60%;">
+      <div class="container-accordion-to-center" style=" width: 100%; display: flex; justify-content: center; align-items:center; min-height: 25rem;">
+        <div class="wrapper-accordion" style=" width: 60%;">
           <div class="FAQ-container" >
             <h5 class="text-primary-400 fw-bold fs-primary-heading">FAQs</h5>
             <p ><a href="" class="text-accent-100 fs-700;">Check out our FAQ center</a> </p>
@@ -431,7 +452,7 @@
           <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed  text-primary-400 fs-600 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <button class="accordion-button collapsed fs-600 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                   What are the devices and pods made out of?
                 </button>
               </h2>
@@ -490,7 +511,7 @@
     <footer class="primary-footer bg-neutral-400" style="margin-top: 4rem;">
       <!-- first half of footer  -->
       <div class="footer-container-to-center">
-        <div class="column-container-wrapper" style="border: solid red; margin-top: 4rem;">
+        <div class="column-container-wrapper" style=" margin-top: 4rem;">
           <div class="column-even-footer" >
             <div>
               <h5>Support Center</h5>
@@ -562,10 +583,10 @@
               <p class="text-primary-100 fs-300 text-center" >Warning: The sale or distribution of Vaporized Nicotine and Non-Nicotine Products to or by persons below eighteen (18) years of age is illegal. These products are harmful and contain nicotine which is a highly addictive substance. It is not recommended for use by nonsmokers.</p>
               <div class="column-even-last-part-footer">
                 <div>
-                  <p class="text-primary-100 fs-300"><a href="">Privacy Policy & Cookie Notice</a></p>
+                  <p class="a-footer text-primary-100 fs-300"><a class="active" href="">Privacy Policy & Cookie Notice</a></p>
                 </div>
                 <div>
-                  <p class="text-primary-100 fs-300"><a href="">Terms & Conditions</a></p>
+                  <p class="a-footer text-primary-100 fs-300"><a class="active" href="">Terms & Conditions</a></p>
                 </div>
               </div>
             </div>

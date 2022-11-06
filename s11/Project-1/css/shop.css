@@ -1,12 +1,5 @@
-body {
-  /* Three column layout */
-  /* Place text to the right */
-  /* Clear floats after the columns */
-  /* The bar container */
-  /* Individual bars */
-}
+
 body .container-shop-first-section {
-  border: solid gold;
   width: min(100% - 2rem, 80%);
   margin-inline: auto;
 }
@@ -18,6 +11,61 @@ body .color-choices li a {
   padding: 0.5rem;
   font-weight: var(--fw-semi-bold);
   color: var(--clr-primary-100);
+}
+body .img-transition .card:hover {
+  border: solid var(--clr-accent-100);
+}
+body .counter-content {
+  display: flex;
+  gap: 2rem;
+}
+body .counter button {
+  border: transparent;
+  border-radius: 50%;
+  padding-inline: 1.25rem;
+  padding-block: 1rem;
+}
+body .counter h3 {
+  margin-top: 0.5rem;
+}
+body .counter-content-one {
+  display: flex;
+  gap: 2rem;
+}
+body .counter-1 button {
+  border: transparent;
+  border-radius: 50%;
+  padding-inline: 1.25rem;
+  padding-block: 1rem;
+}
+body .counter-1 h3 {
+  margin-top: 0.5rem;
+}
+body .counter-content-second {
+  display: flex;
+  gap: 2rem;
+}
+body .counter-2 button {
+  border: transparent;
+  border-radius: 50%;
+  padding-inline: 1.25rem;
+  padding-block: 1rem;
+}
+body .counter-2 h3 {
+  margin-top: 0.5rem;
+}
+body .counter-content-three {
+  display: flex;
+  gap: 2rem;
+}
+body .counter-3 button {
+  border: transparent;
+  border-radius: 50%;
+  padding-inline: 1.25rem;
+  padding-block: 1rem;
+}
+body .counter-3 h3 {
+  margin-top: 0.5rem;
 }
 body .quantity-counter {
   display: flex;
@@ -44,7 +92,6 @@ body .increment {
   border: transparent;
 }
 body .shopLinks {
-  border: solid gold;
   width: min(100% - 2rem, 80%);
   margin-inline: auto;
   font-size: var(--fs-700);
@@ -120,15 +167,12 @@ body .wrapper-reviews .row {
   width: 50%;
   display: flex;
   justify-content: flex-start;
-  border: solid blue;
 }
 body .wrapper-reviews {
-  border: solid pink;
   width: min(100% - 2rem, 80%);
   margin-inline: auto;
 }
 body .wrapper-reviews {
-  border: solid gold;
   width: min(100% - 2rem, 80%);
   margin-inline: auto;
 }/*# sourceMappingURL=shop.css.map */

@@ -69,6 +69,9 @@ body .bg-primary-400 {
 body .bg-primary-100 {
   background-color: var(--clr-primary-100);
 }
+body .bg-primary-50 {
+  background-color: var(--clr-primary-50);
+}
 body .bg-accent-400 {
   background-color: var(--clr-accent-400);
 }
@@ -131,15 +134,20 @@ body .card-body-style {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border: solid red;
   min-height: 100%;
 }
 body .compressed-container {
   width: 100%;
-  border: solid blue;
   display: flex;
   justify-content: center;
   min-height: 100%;
+}
+body .compressed-container .regular-button:hover {
+  background-color: var(--clr-accent-400);
+}
+body .compressed-container .special-button:hover {
+  background-color: var(--clr-accent-100);
+  color: var(--clr-neutral-100);
 }
 body .btn-container-flex {
   display: flex;
@@ -162,12 +170,10 @@ body .container-content-flex {
   justify-content: center;
   align-items: center;
   min-height: 100%;
-  border: solid blue;
 }
 body .compressed-container-sm-section {
   display: flex;
   justify-content: space-between;
-  border: solid violet;
   width: 80%;
   height: 3rem;
   align-items: center;
@@ -175,11 +181,9 @@ body .compressed-container-sm-section {
 body .wrapper-to-center {
   display: flex;
   align-items: center;
-  border: solid gold;
   padding-top: 0.5rem;
 }
 body .wrapper {
-  border: solid yellow;
   margin: 4rem 12rem;
 }
 body .card-body-style-second-sec {
@@ -196,19 +200,21 @@ body .card-body-style-second-sec .cost-style-margin-top {
   margin-top: 2.5rem;
 }
 body .wrapper-third-section {
-  border: solid yellow;
   margin: 4rem 8rem;
   display: flex;
   gap: 2.5rem;
   justify-content: center;
   width: 80%;
 }
+body .wrapper-third-section .third-section-hover:hover {
+  color: var(--clr-accent-400);
+  cursor: pointer;
+}
 body .img-third-section {
   width: 80rem;
   height: 25rem;
 }
 body .container-third-section {
-  border: solid blue;
   display: flex;
   justify-content: center;
 }
@@ -216,12 +222,10 @@ body .card-body-style-section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border: solid orange;
   align-items: center;
 }
 body .wrapper-fourth-section {
   height: 10rem;
-  border: solid pink;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -230,7 +234,6 @@ body .content-center {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border: solid orange;
   align-items: center;
   width: 75%;
 }
@@ -241,21 +244,22 @@ body .carousel-img-size-fifth-section {
 }
 body .compressed-container-fifth-section {
   width: 100%;
-  border: solid blue;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100%;
+}
+body .compressed-container-fifth-section p:hover {
+  color: var(--clr-accent-400);
+  cursor: pointer;
 }
 body .carousel-fifth-section .card-body-styles {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  border: solid gold;
 }
 body .wrapper-sixth-section {
-  border: solid blueviolet;
   display: flex;
   justify-content: center;
   height: 15rem;
@@ -264,20 +268,24 @@ body .wrapper-sixth-section {
 }
 body .container-sixth-section {
   width: 100%;
-  border: solid indianred;
   display: flex;
   justify-content: center;
 }
+body .container-sixth-section .sev-section-hover:hover {
+  color: var(--clr-accent-400);
+  cursor: pointer;
+}
 body .wrapper-second-half-sixth-section {
-  border: solid gold;
   max-width: 80%;
 }
 body .FAQ-container {
-  border: solid red;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+body .FAQ-container a:hover {
+  color: var(--clr-accent-400);
 }
 body .footer-container-to-center {
   width: 100%;
@@ -288,13 +296,16 @@ body .column-container-wrapper {
   display: flex;
   width: 80%;
   justify-content: space-between;
-  border: solid goldenrod;
 }
 body .column-even-footer {
   display: flex;
   justify-content: space-between;
   gap: 8rem;
   line-height: 1rem;
+}
+body .column-even-footer a:hover {
+  color: var(--clr-accent-400);
+  text-decoration: underline;
 }
 body footer a {
   text-decoration: none;
@@ -309,12 +320,10 @@ body .container-second-half-footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  border: solid indianred;
   height: 5rem;
 }
 body .wrapper-second-half-footer {
   width: 80%;
-  border: solid red;
   display: flex;
   align-items: center;
 }
@@ -332,10 +341,13 @@ body .last-part-footer-container {
 }
 body .wrapper-last-part-footer {
   width: 60%;
-  border: solid blue;
 }
 body .column-even-last-part-footer {
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+body .column-even-last-part-footer a:hover, body .column-even-last-part-footer a.active {
+  color: var(--clr-accent-400);
+  text-decoration: underline;
 }/*# sourceMappingURL=relxdvo.css.map */
