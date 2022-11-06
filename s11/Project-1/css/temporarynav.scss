@@ -1,0 +1,51 @@
+@mixin navigation {
+
+        *{
+
+            background-color: var(--clr-neutral-100);
+        }
+        
+        .wrapper-header {
+            border: solid green;
+            display: flex;
+            align-items: center;
+        }
+
+        nav {
+
+            border: solid blue;
+            width: 100%;
+            display: flex;
+            padding-top: 1rem;
+            text-align: center;
+            
+            
+
+
+        }
+
+        ul{
+            list-style-type: none;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            border: solid red;
+            justify-content: center;
+            text-align: center;
+        }
+
+        li a{
+            text-decoration: none;
+            color: var(--clr-primary-400);
+            border: solid yellow;
+           display: block;
+            text-align: center;
+
+        }
+
+}
+
+body header {
+
+    @include navigation();
+}
