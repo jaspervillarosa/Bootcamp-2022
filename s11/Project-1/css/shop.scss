@@ -6,18 +6,30 @@
         margin-inline: auto;
     }
 
+
     .color-choices li a {
         text-decoration: none;
         border: solid var(--clr-primary-50);
         border-width: 1px;
         border-radius: 0.5rem;
-        padding: 0.5rem;
+        padding-block: 1rem;
+        padding-inline: 1.25rem;
         font-weight: var(--fw-semi-bold);
         color: var(--clr-primary-100);
 
         
 
     }
+
+    .pods-choices-add-ons .button-counter {
+
+        &:hover {
+
+            background-color: var(--clr-accent-500);
+        }
+    }
+
+
 
     .img-transition .card {
 
@@ -147,7 +159,8 @@
         border: solid var(--clr-accent-100);
         border-width: 2px;
         border-radius: 0.5rem;
-        padding: 0.5rem;
+        padding-block: 1rem;
+        padding-inline:1.25rem ;
         font-weight: var(--fw-semi-bold);
         color: var(--clr-primary-100);
         

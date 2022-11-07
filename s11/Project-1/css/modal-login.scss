@@ -5,12 +5,22 @@
         width: 100%;
         position: absolute;
         left: 60.5%;
-        top: 17%;
+        top: 18%;
         font-size: var(--fs-primary-heading);
         font-weight: unset;
         cursor: pointer;
         margin-top: 2rem;
+        color: var(--clr-primary-100);
+
+        &:hover {
+
+            color: var(--clr-primary-400);
+            opacity: 0.3;
+        }
+
+     
     }
+
 
     h3 {
         font-weight: var(--fw-bold);
@@ -33,11 +43,14 @@
 
     .wrapper-container-modal-login {
 
-        background-color:  var(--clr-neutral-700);
+        background-color:  var(--clr-neutral-100);
         padding: 2rem;
         width: 30rem;
         border-radius: 2rem;
         margin-top: 2rem;
+        -webkit-box-shadow: 0 10px 6px -6px hsl(0, 0%, 29%);
+            -moz-box-shadow: 0 10px 6px -6px hsl(0, 0%, 29%);
+                 box-shadow: 0 10px 6px -6px hsl(0, 0%, 29%);
 
     }
 
@@ -90,6 +103,7 @@
         font-weight: var(--fw-bold);
         border: solid var(--clr-accent-100);
         color: var(--clr-accent-100);
+        background-color: var(--clr-neutral-100);
 
         &:hover {
 

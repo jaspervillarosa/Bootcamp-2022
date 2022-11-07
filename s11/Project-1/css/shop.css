@@ -14,9 +14,13 @@ body .color-choices li a {
   border: solid var(--clr-primary-50);
   border-width: 1px;
   border-radius: 0.5rem;
-  padding: 0.5rem;
+  padding-block: 1rem;
+  padding-inline: 1.25rem;
   font-weight: var(--fw-semi-bold);
   color: var(--clr-primary-100);
+}
+body .pods-choices-add-ons .button-counter:hover {
+  background-color: var(--clr-accent-500);
 }
 body .img-transition .card:hover {
   border: solid var(--clr-accent-100);
@@ -83,7 +87,8 @@ body .color-choices a.activeLink, body .color-choices a:hover {
   border: solid var(--clr-accent-100);
   border-width: 2px;
   border-radius: 0.5rem;
-  padding: 0.5rem;
+  padding-block: 1rem;
+  padding-inline: 1.25rem;
   font-weight: var(--fw-semi-bold);
   color: var(--clr-primary-100);
 }

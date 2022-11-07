@@ -2,11 +2,16 @@
   width: 100%;
   position: absolute;
   left: 60.5%;
-  top: 17%;
+  top: 18%;
   font-size: var(--fs-primary-heading);
   font-weight: unset;
   cursor: pointer;
   margin-top: 2rem;
+  color: var(--clr-primary-100);
+}
+.modal-login .close:hover {
+  color: var(--clr-primary-400);
+  opacity: 0.3;
 }
 .modal-login h3 {
   font-weight: var(--fw-bold);
@@ -24,11 +29,14 @@
   margin-top: 10rem;
 }
 .modal-login .wrapper-container-modal-login {
-  background-color: var(--clr-neutral-700);
+  background-color: var(--clr-neutral-100);
   padding: 2rem;
   width: 30rem;
   border-radius: 2rem;
   margin-top: 2rem;
+  -webkit-box-shadow: 0 10px 6px -6px hsl(0deg, 0%, 29%);
+  -moz-box-shadow: 0 10px 6px -6px hsl(0deg, 0%, 29%);
+  box-shadow: 0 10px 6px -6px hsl(0deg, 0%, 29%);
 }
 .modal-login input {
   width: 100%;
@@ -64,6 +72,7 @@
   font-weight: var(--fw-bold);
   border: solid var(--clr-accent-100);
   color: var(--clr-accent-100);
+  background-color: var(--clr-neutral-100);
 }
 .modal-login .signup-button:hover {
   background-color: var(--clr-accent-100);

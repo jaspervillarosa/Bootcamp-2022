@@ -25,6 +25,8 @@ header .wrapper-header {
   padding-block: 1rem;
   display: grid;
   grid-template-columns: 1fr auto minmax(600px, 6fr) auto 1fr;
+  border-bottom: solid var(--clr-primary-50);
+  border-width: 1px;
 }
 header .logo {
   grid-column: 2/3;
