@@ -1,4 +1,10 @@
-
+body {
+  /* Three column layout */
+  /* Place text to the right */
+  /* Clear floats after the columns */
+  /* The bar container */
+  /* Individual bars */
+}
 body .container-shop-first-section {
   width: min(100% - 2rem, 80%);
   margin-inline: auto;
