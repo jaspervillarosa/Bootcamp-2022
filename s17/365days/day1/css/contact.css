@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css? family=WorkSans&display=swap");
+.badi {
+  font-family: "WorkSans", sans-serif;
+}
+
+.column {
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20%;
+  border: solid red;
+}
+
+.firstsection {
+  padding-top: 9%;
+}
+.firstsection h1, .firstsection p {
+  text-align: center;
+}
+.firstsection h1 {
+  font-size: 2rem;
+}
+.firstsection p {
+  font-size: 1rem;
+}
+.firstsection span {
+  color: #555555;
+}
+.firstsection .form {
+  font-size: 1rem;
+}
+.firstsection input, .firstsection textarea {
+  width: 200%;
+}
+.firstsection .form .reset {
+  display: block;
+}
+.firstsection button {
+  border-radius: 20px;
+  font-weight: bold;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: black;
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+  color: white;
+  border: black;
+  display: block;
+  margin-top: 20%;
+  width: 200%;
+}
+.firstsection button:hover {
+  background-color: #555555;
+}
+.firstsection .video {
+  display: flex;
+  align-items: center;
+}
+.firstsection .form div {
+  padding-top: 10%;
+}
+.firstsection .containericons {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  gap: 2%;
+}
+.firstsection .fa {
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 20%;
+  color: #333333;
+  font-size: 1.5rem;
+}
+.firstsection .fa-facebook {
+  background: lightgray;
+}
+.firstsection .fa-facebook:hover {
+  color: lightgray;
+  background-color: black;
+  opacity: 0.5;
+}
+.firstsection .fa-twitter {
+  background: lightgray;
+}
+.firstsection .fa-twitter:hover {
+  color: lightgray;
+  background-color: black;
+  opacity: 0.5;
+}
+.firstsection .fa-instagram {
+  background: lightgray;
+}
+.firstsection .fa-instagram:hover {
+  color: lightgray;
+  background-color: black;
+  opacity: 0.5;
+}
+@media screen and (max-width: 48rem) {
+  .firstsection input, .firstsection textarea, .firstsection button {
+    max-width: 100%;
+  }
+  .firstsection .form {
+    width: 75%;
+  }
+  .firstsection .form div {
+    padding-top: 5%;
+  }
+  .firstsection .video {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .firstsection {
+    padding-top: 20%;
+  }
+}/*# sourceMappingURL=contact.css.map */

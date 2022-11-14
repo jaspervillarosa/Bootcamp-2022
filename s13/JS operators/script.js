@@ -23,7 +23,8 @@ let userInputY = prompt("Enter number for y value");
 let x = userInputX;
 let y = userInputY;
 
-
+/*
+*/
 
 x += y;
 console.log(x);
