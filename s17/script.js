@@ -255,3 +255,116 @@ days.forEach(function (day){
     newDays.push(day);
 });
 console.log(newDays);
+
+
+let pets = ["dogs","cats"];
+let word;
+let newIncludes = pets.includes("cats");
+
+function check (word) {
+
+    let isPresent = newIncludes;
+    console.log(isPresent);
+
+    if (isPresent == true){
+    
+        console.log("cats");
+    }
+    
+    else if (isPresent == false) console.log("Not found");
+}
+
+check (newIncludes);
+
+let digits = [1,2,3,4,5];
+let newFilter = digits.filter(
+    function (element) {
+        return element < 3
+    }
+);
+
+console.log(newFilter);
+
+//includes()
+//When checking array elements it is case sensitive
+//returning true or false as appropriate, it returns true if a string contains a SPECIFIED string, otherwise it will return false.
+//it determines whether an array includes a certain value among its entries.
+
+
+// let pets = ["Shih Tzu", "Hedgehog", "Squirrel", "Rats"];
+
+// let newIncludes = pets.includes("Squirrel");
+
+// console.log(newIncludes); //true - boolean
+
+// //Exercise using include method
+
+// function checkTheWord (word)
+// {
+//     if (pets.includes(word) == true)
+//     {
+//         return word
+//     }
+
+//     else {
+//         return `${word} not found`
+//     }
+// }
+
+// console.log(checkTheWord("Squirrel"));
+// console.log(checkTheWord("dogs"));
+
+
+console.log(digits);
+
+//returns true if all elements passed the given condition.
+
+let newEvery = digits.every(
+    function (element) {
+        return element > 1
+    }
+);
+
+console.log(newEvery); //false - returns a boolean
+
+//some() - checks if "at least one element" passes a given condition.
+//returns true even if only some of the elements passed the given condition.
+
+let newSome = digits.some(
+    function (element){
+        //element parameter represents the index in the array.
+        return element > 2
+    }
+);
+
+console.log(newSome); //true - Boolean
+
+
+//reduce() - evaluates elements from left to right  and returns a "single value"
+
+let numeric = [5,11,30,118, 634];
+
+// let sumArr = numeric.reduce(
+
+//     function (a,b){
+//         return value = a+b;
+//     }
+// );
+
+// console.log(sumArr);
+// // 15 - it adds all the elements in an array
+
+// console.log(sumArr/numeric.length); //3 - it divides the total number of an array and the elements
+
+let total = 0;
+function average (numeric){
+
+    for (let i=0; i<numeric.length; i++){
+
+       total = total + numeric[i];
+        
+    }
+   
+}
+average (numeric);
+console.log(total);
