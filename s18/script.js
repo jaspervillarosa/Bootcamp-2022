@@ -201,3 +201,170 @@ for (let i=0; i<studentGrades.length; i++){
 }
 
 // console.log(average);
+
+
+//Q: What if we want to create a multiple objects with the same properties? Would you prefer creating 1 object each? No, it will take too long
+
+//To solve this dilemma, Object Constructor will be a good use.
+
+//Object Constructor - serves as a blueprint of our objects.
+// Objects created using "this" constructor will inherit what are the function properties and methods set by this function.
+
+//Q: What are the steps in creating an Object Constructor
+
+// //Step 1: Create a template or blueprint
+// function Pokemon (name, lvl, hp){
+//     this.name = name;
+//     this.level = lvl;
+//     this.health = hp * 2;
+//     this.attack = lvl;
+
+//     this.tackle = function (target){
+//         console.log(target);
+
+//         console.log(`This ${this.name} tackled ${target.name}`);
+
+//         console.log(`${target.name}'s health is now reduced to ${target.health - this.attack}`);
+//     };
+
+//     this.faint = function(){
+//         console.log(`${this.name} fainted!`);
+//     }
+// }
+
+// //Step 2: Initialize an Object with arguments
+// let pikachu = new Pokemon ("Pikachu", 5, 50);
+// let charizzard = new Pokemon ("Charizzard", 8, 40)
+
+// console.log(pikachu);
+// console.log(charizzard);
+
+//Step 3: Execute the property
+//For this example we execute the tackle property of Pikachu object
+// console.log(pikachu.tackle(charizzard));
+// console.log(pikachu.tackle(charizzard));
+// console.log(pikachu.tackle(charizzard));
+
+
+// function Fight (name, lvl, hp){
+
+//     this.name = name;
+//     this.level = lvl;
+//     this.health = hp;
+//     this.attack = lvl;
+
+//     life= this.health;
+
+//     this.tackle = function (target){
+
+//         // console.log(target);
+
+
+//         if (target == mother){
+//             console.log (`${this.name} punch ${target.name}`);
+//             life = life - this.attack;
+//         }
+
+//         else if (target == father){
+//             console.log (`${this.name} spank ${target.name}`);
+//             life = life - this.attack;
+//         }
+
+//         console.log(`${target.name}'s health is now reduced to ${life}`)
+
+//             if (life <= 0){
+//                     console.log(`${target.name} fainted!`);
+//             }
+//             else if (life != 0){
+        
+//                 let answer = prompt("Who should attack?");
+
+//                 if (answer == 'mother'){
+                
+//                     console.log(mother.tackle(father))
+//                 }    
+//                 else if (answer == 'father'){
+                
+//                     console.log(father.tackle(mother))
+//                 }
+//                 else 
+//                     console.log("No answer")
+                
+//                 }
+//     };
+
+    
+// }
+
+// let mother  = new Fight ("Mother", 20, 100);
+// let father = new Fight ("Father", 25, 70);
+
+// console.log(mother)
+// console.log(father)
+
+// let answer = prompt("Who should attack?");
+
+// if (answer == 'mother'){
+
+//     console.log(mother.tackle(father))
+// }
+
+// else if (answer == 'father'){
+
+//     console.log(father.tackle(mother))
+// }
+// else 
+//     console.log("No answerfather")
+
+
+let users = [
+
+    {
+        name: "jasper",
+        email: "japarvillarosa@gmail.com",
+        password: "12345"
+
+    },
+
+    {
+        name: "april",
+        email: "aprilvillarosa@gmail.com",
+        password: "6789"
+
+    }
+]
+
+function  login (useremail, userpassword){
+
+    let credentials = users.find((user)=> {
+        return user.email === useremail && user.password === userpassword
+    });
+    
+
+    if (!credentials){
+
+        alert("Login unsuccessful!");
+        console.log(credentials);
+    }
+
+    else{
+
+        alert("Login Successful");
+        console.log(credentials);
+    } 
+      
+    
+}
+
+
+// let useremail = prompt ("Enter email");
+// let userpassword = prompt ("Enter password");
+
+// login (useremail, userpassword);
+
+// login("japarvillarosa@gmail.com", "12345")
+
+users.forEach((studentName) => {
+    console.log(`My name is ${studentName.name}. Lets be friends!`)
+})
+
