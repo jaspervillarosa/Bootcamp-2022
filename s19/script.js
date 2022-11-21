@@ -120,24 +120,22 @@ class Car {
 
 // }
 
-class myWeight {
+// class myWeight {
 
-    constructor (name, kg) = name;
-    this.kilograms = kg;
-    this.pounds = kg * 2.2;
-    this.convertWeight = function (){
+//     constructor (name, kg) = name;
+//     this.kilograms = kg;
+//     this.pounds = kg * 2.2;
+//     this.convertWeight = function (){
 
-        console.log(`Jelly's weight is ${convertWeight}`)
-    }
+//         console.log(`Jelly's weight is ${convertWeight}`)
+//     }
 
     
-    // convertWeight(weight)
+//     // convertWeight(weight)
 
-}
+// }
 
-console.log(myWeight ('Jasper', 95))
-
-
+// console.log(myWeight ('Jasper', 95))
 
 
 
@@ -152,7 +150,7 @@ console.log(myWeight ('Jasper', 95))
 //     }
 
 //     weightInPounds() {
-//         return funcKilogramsToPounds(this.kgWeight);
+//         return funcKilogramsToPounds(this.kgWeight)
 //     }
 
 //     weightMessage() {
@@ -163,4 +161,30 @@ console.log(myWeight ('Jasper', 95))
 //     }
 // }
 
-// console.log(new Tao('Reden', 95).weightMessage());
+console.log(new Tao('Reden', 95).weightMessage());
+
+function myWeightPounds (kgValue){
+
+   value = kgValue *  2.2;
+   finalValue = value.toFixed(2);
+//    console.log(finalValue)
+   return finalValue;
+
+}
+class myWeight {
+
+    constructor (name, kg){
+        this.name = name;
+        this.kilograms = kg;
+     }
+
+     myWeightPounds(){
+        
+        this.pounds = myWeightPounds(this.kilograms)
+        console.log(`${this.name}'s weigth in lbs is ${this.pounds}`)
+     }
+
+
+}
+
+new myWeight("Jasper", 58).myWeightPounds()
