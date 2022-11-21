@@ -161,7 +161,7 @@ class Car {
 //     }
 // }
 
-console.log(new Tao('Reden', 95).weightMessage());
+// console.log(new Tao('Reden', 95).weightMessage());
 
 function myWeightPounds (kgValue){
 
@@ -181,7 +181,7 @@ class myWeight {
      myWeightPounds(){
         
         this.pounds = myWeightPounds(this.kilograms)
-        console.log(`${this.name}'s weigth in lbs is ${this.pounds}`)
+        console.log(`${this.name}'s weight in lbs is ${this.pounds}`)
      }
 
 
