@@ -115,3 +115,52 @@ class Car {
 }
 
 
+
+// function convertWeight(){
+
+// }
+
+class myWeight {
+
+    constructor (name, kg) = name;
+    this.kilograms = kg;
+    this.pounds = kg * 2.2;
+    this.convertWeight = function (){
+
+        console.log(`Jelly's weight is ${convertWeight}`)
+    }
+
+    
+    // convertWeight(weight)
+
+}
+
+console.log(myWeight ('Jasper', 95))
+
+
+
+
+
+
+// const funcKilogramsToPounds = (_kg = 1) => _kg * 2.20462262;
+
+// class Tao {
+
+//     constructor (_name, _kgWeight) {
+//         this.name = _name;
+//         this.kgWeight = _kgWeight;
+//     }
+
+//     weightInPounds() {
+//         return funcKilogramsToPounds(this.kgWeight);
+//     }
+
+//     weightMessage() {
+//         return `
+//             ${this.name}'s weighs ${this.kgWeight} kilograms (kg) 
+//             and is ${this.weightInPounds()} in pounds (lbs).
+//         `
+//     }
+// }
+
+// console.log(new Tao('Reden', 95).weightMessage());
