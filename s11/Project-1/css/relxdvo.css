@@ -156,6 +156,11 @@ body .btn-container-flex {
   display: flex;
   gap: 1rem;
 }
+@media screen and (max-width: 85rem) {
+  body .btn-container-flex {
+    gap: 0.5rem;
+  }
+}
 body .btn-border-accent {
   border: solid var(--clr-accent-100);
 }
@@ -163,6 +168,57 @@ body .carousel-img-size {
   width: 65rem;
   height: 35rem;
   border-radius: 2rem;
+}
+@media screen and (max-width: 85rem) {
+  body .carousel-img-size {
+    height: 24rem;
+  }
+}
+@media screen and (max-width: 85rem) {
+  body .carousel-container-center {
+    width: 80%;
+    margin: auto;
+  }
+}
+body .header-first-section {
+  font-size: var(--fs-primary-heading);
+  font-weight: var(--fw-bold);
+  color: var(--clr-primary-400);
+}
+@media screen and (max-width: 85rem) {
+  body .header-first-section {
+    font-size: var(--fs-secondary-heading);
+  }
+}
+body .subheader-first-section {
+  font-size: var(--fs-700);
+  color: var(--clr-primary-100);
+}
+@media screen and (max-width: 85rem) {
+  body .subheader-first-section {
+    font-size: var(--fs-650);
+  }
+}
+body .regular-button {
+  border-radius: 30px;
+  border: transparent;
+  padding: 1rem;
+}
+@media screen and (max-width: 85rem) {
+  body .regular-button {
+    padding: 0.65rem;
+    font-size: var(--fs-400);
+  }
+}
+body .special-button {
+  border-radius: 30px;
+  padding: 1rem;
+}
+@media screen and (max-width: 85rem) {
+  body .special-button {
+    padding: 0.5rem;
+    font-size: var(--fs-400);
+  }
 }
 body span {
   font-weight: var(--fw-bold);
