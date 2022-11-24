@@ -3,7 +3,8 @@ console.log("connected");
 addButton = document.querySelector("#button");
 deleteButton = document.querySelector("#delete");
 
-todoWrapper_edit = document.querySelector(".todo-wrapper");
+todoWrapper_edit = document.querySelector(".containerDiv");
+
 
 
 
@@ -12,37 +13,40 @@ addButton.addEventListener("click", () => {
     let userInput = document.querySelector("#userInput").value;
     console.log(userInput)
 
-    if (userInput != " "){
+    if (userInput != ""){
 
         
         // containers 
             
-        let li = document.createElement("label");
-        li.for = "accept"
-        li.className = "todo";
+        let labelName = document.createElement("label");
+        labelName.for = "accept"
+        labelName.className = "todo";
 
         let checkBox = document.createElement("input")
         checkBox.id = "accept"
         checkBox.value = "yes"
         checkBox.type = "checkbox"
+        checkBox.for = "checkColor"
+        checkBox.style = "margin-inline: 1rem "
 
-
+     
         let container = document.createElement("div")
-        // container = container.split("")
-        // container = container.join(" ")
         container.className = "form-check"
+        container.id = "form-checked"
                 
         let nodeContainer = document.createTextNode(userInput)
 
 
-        li.appendChild(nodeContainer);
+        labelName.appendChild(nodeContainer);
 
         container.appendChild(checkBox);
-        container.appendChild(li);
+        container.appendChild(labelName);
 
         todoWrapper_edit.appendChild(container);
 
-        console.log(`this is li ${li}`)
+        console.log(`this is labelName ${labelName}`)
+
+        document.querySelector("#userInput").value = "";
 
     }
 
@@ -56,32 +60,25 @@ addButton.addEventListener("click", () => {
 
 deleteButton.addEventListener("click", ()=> {
         
-        console.log(`this is ${li}`)
-        let cb = document.querySelector("#accept")
-        console.log(cb.checked)
+        let cbCount = document.querySelectorAll('input[type="checkbox"]')
+        let div = document.getElementById("formChecked")
+        let msg = confirm(`Are you sure you want to delete?`)
+            for (let item of cbCount){
 
-        if (cb.checked == true){
-            
-
-            let msg =  confirm (
-
-                `Are you sure you want to delete?`
-            );
-
-            if (msg == true){
-
-                // let element = document.getElementById(".todo-wrapper")
-                // console.log(element)
                 
-                // while (element.firstChild){
-                    li.parentElement.remove(li)
+                    
+                    if (item.checked){
+
+                        if (msg == true){
+                            item.parentElement.remove(div)
+                            console.log("deleted successfully")
+                        }
+                        else break;
+                       
+                    }
+                    else
+                        console.log("nothingmore ..")
+                  
                 }
-                
-            }
-        
 
-        else {
-
-            alert ("failed")
-        }
 });

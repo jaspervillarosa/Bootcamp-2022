@@ -1,0 +1,44 @@
+
+/* style=" padding: 0.5rem; background-color: black; border-radius: 2rem; padding-block: 0.25rem; color: white;" */
+
+.addButton {
+
+    padding-inline: 2rem;
+    background-color: black;
+    padding-block: 0.25rem;
+    color: white;
+    border: transparent;
+    border-radius: 2rem;
+    
+}
+.addButton:hover{
+
+    background-color: orange;
+    border-radius: 2rem;
+ 
+
+}
+
+.deleteButton {
+
+    padding-inline: 2rem;
+    background-color: black;
+    padding-block: 0.25rem;
+    color: white;
+    border: transparent;
+    border-radius: 2rem;
+    
+}
+.deleteButton:hover{
+
+    background-color: orange;
+    border-radius: 2rem;
+ 
+
+}
+
+#checkBox{
+
+    color:pink;
+    background-color: pink;
+} 
