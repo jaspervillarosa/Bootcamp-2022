@@ -19,7 +19,7 @@
 
 }
 
-.deleteButton {
+.deleteButton, .selectButton {
 
     padding-inline: 2rem;
     background-color: black;
@@ -29,7 +29,7 @@
     border-radius: 2rem;
     
 }
-.deleteButton:hover{
+.deleteButton:hover, .selectButton:hover{
 
     background-color: orange;
     border-radius: 2rem;

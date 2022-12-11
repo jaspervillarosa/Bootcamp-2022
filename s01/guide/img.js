@@ -1,0 +1,20 @@
+var img = document.createElement('img');
+img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/American_Beaver.jpg/220px-American_Beaver.jpg';
+document.body.appendChild(img);
+var canvas = document.createElement('canvas');
+canvas.width = img.width;
+canvas.height = img.height;
+document.body.appendChild(canvas);
+var ctx = canvas.getContext('2d');
+ctx.drawImage(img, 1, 1);
+var imageData = ctx.getImageData(1, 1, img.width, img.height);
+var data = imageData.data;
+var huffman = new Huffman();
+var compressed = huffman.compress(data);
+var decompressed = huffman.decompress(compressed);
+var imageData2 = ctx.createImageData(img.width, img.height);
+imageData2.data.set(decompressed);
+ctx.putImageData(imageData2, 1, 1);
+var size = document.createElement('div');
+console.log(compressed.length)
+//size.innerHTML = 'Original size: ' + data.length + ' bytes<br>Compressed size: ' + compressed.length + ' bytes';
