@@ -107,3 +107,16 @@ VALUES (3, "Third Code", "Welcome to Mars", "2021-01-02 03:00:00");
 
 INSERT INTO posts (user_id, title, content, datetime_posted)
 VALUES ("4, Fourth Code", "Bye Bye Solar System", "2021-01-02 04:00:00");
+
+
+--GET all the title with a user_id of 1;
+SELECT title from posts WHERE user_id =1;
+
+--GET all user's email and datetime of creation
+SELECT email, datetime_created from users;
+
+--update a post's content to "hello to the people of the earth" WHERE its initial content is "Hello Earth" by suing the record's id
+UPDATE posts SET content = "Hello to the people of the earth" WHEE id = 2;
+
+--Delete the user with an email of "johndoe@gmail.com".
+DELETE FROM users WHEE email = "johndoe@gmail.com";
