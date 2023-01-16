@@ -8,6 +8,8 @@ const cors = require('cors');
 
 //import routes modules
 const userRoutes = require('./routes/userRoutes')
+const pestRoutes = require('./routes/pestRoutes')
+const sampleRoutes = require('./routes/sampleRoutes')
 
 // mongodb connection and notif 
 mongoose.connect('mongodb+srv://jaspervillarosa:weelspargo@villarosacluster.pcl70ke.mongodb.net/?retryWrites=true&w=majority',
@@ -20,10 +22,12 @@ db.once('open', () => console.log('Connected to the database'))
 //Middleware
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
-app.use(cors);
+app.use(cors());
 
 //Routes
 app.use('/api/users', userRoutes)
+app.use('/api/pest', pestRoutes)
+app.use('/', sampleRoutes)
 
 app.listen(PORT, () => console.log(`Server running at port ${PORT}
 `));

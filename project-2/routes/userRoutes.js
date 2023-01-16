@@ -33,10 +33,11 @@ router.post('/login', (req, res) => {
 })
 
 //retrieving user info
-router.post('/details', auth.verify, (req, res) => {
+router.post('/details', (req, res) => {
 
-    let userData = auth.decode(req.headers.authorization)
-    userController.getProfile(userData).then(result => res.send(result))
+    // let userData = auth.decode(req.headers.authorization)
+    userController.getProfile(req.body).then(result => res.send(result));
+    // console.log(true)
 })
 
 router.post('/add-pests', auth.verify, (req, res) =>{

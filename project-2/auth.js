@@ -12,7 +12,7 @@ const secret = "PestVerificationAPI";
 module.exports.createAccessToken = (user) => {
 
     const data = {
-        id: user_id,
+        id: user.id,
         email: user.email,
         isAdmin: user.isAdmin
     }

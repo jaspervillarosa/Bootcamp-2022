@@ -3,7 +3,7 @@
 const User = require('./../models/User');
 const Pests = require('./../models/Pests');
 
-const bycrpt = require('bcrypt');
+const bcrypt = require('bcrypt');
 const auth = require('../auth');
 
 module.exports.checkEmail = (reqBody) => {
@@ -18,7 +18,7 @@ module.exports.checkEmail = (reqBody) => {
         else {
             if (result == null){
 
-                return true
+                return 'Email not existing'
             }
             else {
                 return error
@@ -35,7 +35,7 @@ module.exports.register = (reqBody) => {
         address: reqBody.address,
         companyName: reqBody.companyName,
         email: reqBody.email,
-        password: bycrpt.hashSync(reqBody.password, 10),
+        password: bcrypt.hashSync(reqBody.password, 10),
         mobileNo: reqBody.mobileNo
     });
 
@@ -57,7 +57,7 @@ module.exports.getAllUsers = () => {
     return User.find().then((result, error) => {
 
         if (result){
-            return true
+            return result
         }
         else {
             return error
@@ -87,7 +87,7 @@ module.exports.login = (reqBody) => {
 
             else {
 
-                return false
+                return {access:auth.createAccessToken(result)}
             }
         }
     })
@@ -102,6 +102,7 @@ module.exports.getProfile = (data) => {
         if(result !=null){
              
             result.password = "";
+            return result
 
         } else{
 
