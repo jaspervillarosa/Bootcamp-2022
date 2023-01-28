@@ -1,0 +1,123 @@
+.modal-login .close {
+  width: 100%;
+  position: absolute;
+  left: 60.5%;
+  top: 18%;
+  font-size: var(--fs-primary-heading);
+  font-weight: unset;
+  cursor: pointer;
+  margin-top: 2rem;
+  color: var(--clr-primary-100);
+}
+.modal-login .close:hover {
+  color: var(--clr-primary-400);
+  opacity: 0.3;
+}
+.modal-login h3 {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-primary-heading);
+  text-align: center;
+}
+.modal-login .modal-login {
+  display: flex;
+  justify-content: center;
+}
+.modal-login .wrapper-modal-login {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.modal-login .wrapper-container-modal-login {
+  background-color: var(--clr-neutral-100);
+  padding: 2rem;
+  width: 30rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  -webkit-box-shadow: 0 10px 6px -6px hsl(0deg, 0%, 29%);
+  -moz-box-shadow: 0 10px 6px -6px hsl(0deg, 0%, 29%);
+  box-shadow: 0 10px 6px -6px hsl(0deg, 0%, 29%);
+}
+.modal-login input {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  padding-block: 1rem;
+  padding-inline: 1.25rem;
+  background-color: var(--clr-primary-50);
+  border: transparent;
+}
+.modal-login .forgot-password {
+  text-decoration: underline;
+  color: var(--clr-accent-400);
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.modal-login .instruction-login {
+  color: var(--clr-primary-100);
+}
+.modal-login .terms-policy {
+  text-decoration: underline;
+  color: var(--clr-accent-100);
+  font-weight: bold;
+  cursor: pointer;
+}
+.modal-login .terms-policy:hover {
+  color: var(--clr-accent-400);
+}
+.modal-login .signup-button {
+  border-radius: 2rem;
+  padding-block: 0.875rem;
+  padding-inline: 3rem;
+  font-weight: var(--fw-bold);
+  border: solid var(--clr-accent-100);
+  color: var(--clr-accent-100);
+  background-color: var(--clr-neutral-100);
+}
+.modal-login .signup-button:hover {
+  background-color: var(--clr-accent-100);
+  color: var(--clr-neutral-100);
+}
+.modal-login .login-button {
+  border-radius: 2rem;
+  padding-block: 0.875rem;
+  padding-inline: 5.75rem;
+  font-weight: var(--fw-bold);
+  border: transparent;
+  background-color: var(--clr-accent-100);
+  color: var(--clr-neutral-100);
+}
+.modal-login .login-button:hover {
+  background-color: var(--clr-accent-400);
+}
+.modal-login .or {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.modal-login .wrapper-center-icons {
+  display: flex;
+  justify-content: center;
+}
+.modal-login ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  width: 8rem;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.modal-login a {
+  text-decoration: none;
+}
+.modal-login .fa-facebook {
+  font-size: var(--fs-700);
+  color: var(--clr-icons-100);
+  cursor: pointer;
+}
+.modal-login .fa-google {
+  font-size: var(--fs-700);
+  color: var(--clr-icons-200);
+  cursor: pointer;
+}/*# sourceMappingURL=modal-login.css.map */
