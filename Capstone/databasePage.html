@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone</title>
+    <title>database page</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/capstoneStyle.css">
+    <link rel="stylesheet" href="./css/mainpageStyle.css">
+    <link rel="stylesheet" href="./css/database.css">
     <!-- bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- fonts  -->
@@ -23,38 +25,42 @@
         <header class="primary-header">
             <div class="wrapper-header">
                 <nav class="secondary-nav">
-                    <ul>
-                        <li><a href=""></a>Text/Viber: 09263524939</li>
-                        <li><a href=""></a>pcadrchelpdesk@mail.pca.gov.ph</li>
+                    <ul class="secondary-nav-contact">
+                        <li><i class="fa-solid fa-phone"></i><a href="#">Text/Viber: 09263524939</a></li>
+                        <li><i class="fa-regular fa-envelope"></i><a href="#">pcadrchelpdesk@mail.pca.gov.ph</a></li>
                     </ul>
-                    <ul>
-                        <li><i class="fa-sharp fa-solid fa-lock"></i><a href="">Hello Admin</a></li>
+                    <ul class="secondary-nav-login">
+                        <li><i class="fa-solid fa-unlock"></i><a href="">HELLO ADMIN</a></li>
                     </ul>
                 </nav>
                 <!-- logo  -->
-                <h1 class="logo"><a href=""><img src="" alt="">GOV.PH</a></h1>
+                <div class="primary-nav-wrapper">
+                     <h1 class="logo"><a href=""><img src="" alt="">GOV.PH</a></h1>
                 <!-- navigation bar  -->
                 <nav class="primary-nav">
                     <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">RESOURCES</a></li>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">CONTACT</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Resources</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
                     </ul>
                 </nav>
+                </div>
             </div>
         </header>
-        <section class="pca-logo">
+        <section class="pca-logo-section">
             <div class="wrapper-pca-logo">
                 <h1 class="pcaLogo"><a href="#"><img src="./images/pcalogo.png" alt=""></a></h1>
-                <h4>Department of Agriculture</h4>
-                <h1 class="primaryHeader">PHILIPPINE COCONUT AUTHORITY</h1>
-                <h4>PCA-DRC Compound, Bago Oshiro Tugbok, Davao City</h4>
+                <div class="pca-logo-txt">
+                    <h4>Department of Agriculture</h4>
+                    <h1 class="primaryHeader">PHILIPPINE COCONUT AUTHORITY</h1>
+                    <h4>PCA-DRC Compound, Bago Oshiro Tugbok, Davao City</h4>
+                </div>
             </div>
 
             <div class="philippineTime-wrapper">
                 <h5>Philippine Standard Time</h5>
-                <h5>Saturday, January 28, 2023</h5>
+                <h5>Sunday, January 29, 2023</h5>
                 <div class="social-media-logos">
                     <h1><a href=""><img src="./images/fb.png" alt=""></a></h1>
                     <h1><a href=""><img src="./images/yt.png" alt=""></a></h1>
@@ -64,18 +70,6 @@
 
         </section>
         <section class="main-section">
-            <div class="side-nav-wrapper">
-                <nav class="side-nav-bar">
-                    <h1>RESOURCES</h1>
-                    <ul>
-                        <li><a href="">COCONUT PESTS</a></li>
-                        <li><a href="">COCONUT DISEASES</a></li>
-                        <li><a href="">MANAGEMENT</a></li>
-                        <li><a href="">STATISTICS</a></li>
-                    </ul>
-                </nav>
-            </div>
-
             <div class="database-editor-section">
                 <h1>Manage Database</h1>
                 <ul>
@@ -87,19 +81,19 @@
                     <h4>Management </h4>
                 <div class="search-inputs-database">
                     <h2>Pest and or Disease </h2>
-                    <h5>Name contains</h5>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    <div class="inputs-wrapper">
+                        <div class="inputs-wrapper-inside">
+                              <!-- <h5>Name contains</h5> -->
+                            <div class="input-group mb-3">
+                                <input type="text" placeholder="Name contains.." class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                            </div>
+                        </div>
+                        <div class="inputs-wrapper-inside">
+                                <!-- <h5>Scientific Name</h5> -->
+                             <input type="text" placeholder="Input scientific name.." class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                         <button type="button" class="btn btn-success">SEARCH</button>
                     </div>
-                    <h5>Scientific Name</h5>
-                    <div class="input-group mb-3">
-                        <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
-                          <option value="0"></option>
-                          <option value="1">Coconut Diseases</option>
-                          <option value="2">Coconut Pests</option>
-                        </select>
-                      </div>
-                      <button type="button" class="btn btn-success">SEARCH</button>
                 </div>
                 <div class="add-button-database-wrapper">
                     <button type="button" class="btn btn-success"> <span> + </span>Add New Pest and or Disease</button>
@@ -119,39 +113,41 @@
                         </thead>
                         <tbody class="table-group-divider">
                           <tr>
-                            <th scope="row">1</th>
-                            <td><img src="" alt=""></td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <th >Rhinoceros beetle</th>
+                            <td><img src="./images/rhinoceros-beetle.webp" alt=""></td>
+                            <td>Dynastinae</td>
+                            <td>Adults remain in the pupal cell for 17-22 days before emerging and flying to palm crowns to feed. They are active at night and hide in feeding or breeding sites during the day.</td>
+                            <td>The beetles damage palms by boring into the centre of the crown, injuring the young growing tissues and feed on the exuded sap.</td>
+                            <td>Chop and burn decaying logs or break them up and destroy any adult beetles developing inside. Cut stumps as close to the soil surface as possible.</td>
                             <td><a href=""><i class="fa-solid fa-pencil"></i></a><a href=""><i class="fa-solid fa-trash-can"></i></a></td>
                           </tr>
                           <tr>
-                            <th scope="row">2</th>
-                            <td><img src="" alt=""></td>
-                            <td>@fat</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>@mdo</td>
+                            <th >Red palm weevil</th>
+                            <td><img src="./images/red-weevil.webp" alt=""></td>
+                            <td>Rhynchophorus ferrugineus</td>
+                            <td>Volatiles emanating from unhealthy or damaged palm trees, and aggregation pheromones</td>
+                            <td> Palm Weevil larvae feed within the apical growing point of the palms creating extensive damage to palm tissues and weakening the structure of the palm trunk.</td>
+                            <td>Trunk injections or soil applications of systemic insecticides that move inside the palm poisoning weevil larvae and adults may also be effective.</td>
                             <td><a href=""><i class="fa-solid fa-pencil"></i></a><a href=""><i class="fa-solid fa-trash-can"></i></a></td>
                           </tr>
                           <tr>
-                            <th scope="row">3</th>
-                            <td ><img src="" alt=""></td>
-                            <td>@twitter</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>@mdo</td>
+                            <th >Shot hole or Bark borer</th>
+                            <td ><img src="./images/bark-borer.jpg" alt=""></td>
+                            <td>Scolytus rugulosus</td>
+                            <td>Farming it inside the tree as a food source for the beetle and its larvae. In susceptible trees, the fungus kills vascular tissue causing Fusarium dieback and tree death.</td>
+                            <td>Have significant impact on amenity trees, native vegetation, and the fruit and nut tree industries.</td>
+                            <td>Conducting trapping and surveillance to determine the spread of the pest.
+
+Traps are being distributed through the Quarantine Area and across the metro area, these will remain in place for at least six months.</td>
                             <td><a href=""><i class="fa-solid fa-pencil"></i></a><a href=""><i class="fa-solid fa-trash-can"></i></a></td>
                           </tr>
                           <tr>
-                            <th scope="row">4</th>
-                            <td><img src="" alt=""></td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <th>Black headed caterpillar</th>
+                            <td><img src="./images/caterpillar.png" alt=""></td>
+                            <td>Opisina arenosella</td>
+                            <td>It is the larvae of coconut caterpillar that causes the damage, feeding on the surface tissues of the underside of the leaflets. </td>
+                            <td>Recognized by dried up and green patches appearing on the upper epidermis of leaves, presence of larval silk galleries, moulds and pupal cases on lower surfaces of leaves.</td>
+                            <td>Releasing the parasitoids Goniozus nephantidis or Bracon brevicornis once in a fortnight till the menace is cleared. </td>
                             <td><a href=""><i class="fa-solid fa-pencil"></i></a><a href=""><i class="fa-solid fa-trash-can"></i></a></td>
                           </tr>
                           
@@ -180,39 +176,39 @@
                             </thead>
                             <tbody class="table-group-divider">
                             <tr>
-                                <th scope="row">1</th>
-                                <td>hakdog</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <th>John Paul Dela Cruz</th>
+                                <td>Corner Rizal Avenue and Valencia Streets, Puerto Princesa</td>
+                                <td>Blackburrow Ranch</td>
+                                <td>jpdelacruz@pcadrc.gov.ph</td>
+                                <td>000000</td>
+                                <td>0908-813-1496</td>
                                 <td><a href=""><i class="fa-solid fa-pencil"></i></a><a href=""><i class="fa-solid fa-trash-can"></i></a></td>
                             </tr>
                             <tr>
-                                <th scope="row">2</th>
-                                <td>hakdog</td>
-                                <td>@fat</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td>@mdo</td>
+                                <th>Justine Garcia</th>
+                                <td> 709 General Luis Street 1400, Caloocan city</td>
+                                <td>Fresh Fields.</td>
+                                <td>jgarcia@pcadrc.gov.ph</td>
+                                <td>!adkgds@j</td>
+                                <td>0926-432-3422</td>
                                 <td><a href=""><i class="fa-solid fa-pencil"></i></a><a href=""><i class="fa-solid fa-trash-can"></i></a></td>
                             </tr>
                             <tr>
-                                <th scope="row">3</th>
-                                <td >hakdog</td>
-                                <td>@twitter</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td>@mdo</td>
+                                <th>Daniel Santos </th>
+                                <td >18/F The Pacific Star Building Makati Avenue Corner Senator Gil Puyat Avenue 1200, Makati city</td>
+                                <td>Aggregate Agro</td>
+                                <td>danielsantos@pcadrc.gov.ph</td>
+                                <td>march282000</td>
+                                <td>0935-918-8591</td>
                                 <td><a href=""><i class="fa-solid fa-pencil"></i></a><a href=""><i class="fa-solid fa-trash-can"></i></a></td>
                             </tr>
                             <tr>
-                                <th scope="row">4</th>
-                                <td>hakdog</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <th >Mark Anthony Bautista</th>
+                                <td>54 62 Stanford Street Cubao 1100, Quezon city</td>
+                                <td>Agventure</td>
+                                <td>mabautista@pcadrc.gov.ph</td>
+                                <td>2342joy</td>
+                                <td>0917-054-1052</td>
                                 <td><a href=""><i class="fa-solid fa-pencil"></i></a><a href=""><i class="fa-solid fa-trash-can"></i></a></td>
                             </tr>
                             
@@ -225,20 +221,23 @@
             </div>
 
         </section>
+       
         <section class="logos">
-            <li><a href=""><img src="./images/TS.jpg" alt=""></a></li>
-            <li><a href=""><img src="./images/FS.png" alt=""></a></li>
-            <li><a href=""><img src="./images/CS.png" alt=""></a></li>
+            <ul>
+                <li><a href=""><img src="./images/TS.jpg" alt=""></a></li>
+                <li><a href=""><img src="./images/FS.png" alt=""></a></li>
+                <li><a href=""><img src="./images/CS.png" alt=""></a></li>
+            </ul>
         </section>
         <section class="accordion-pcadrc">
             <div class="pca-drc-accordionetc-wrapper">
-                <div>
+                <div class="davao-research-center-wrapper">
                     <h3>DAVAO RESEARCH CENTER</h3>
                     <div class="loc-wrapper">
-                        <a href="">icon</a>
-                        <h4>Trade & Industry Building
-                            361 Senator Gil J. Puyat Avenue,
-                            Makati City, Metro Manila
+                        <h2><a href=""><i class="fa-solid fa-location-dot"></i></a></h2>
+                        <h4>Trade & Industry Building <br>
+                            361 Senator Gil J. Puyat Avenue, <br>
+                            Makati City, Metro Manila <br>
                             Philippines 1200
                         </h4>    
                     </div>   
@@ -248,41 +247,41 @@
                         <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
                     </ul> 
                 </div>
-                <div>
+                <div class="quick-links-wrapper">
                     <h3>Quick Links</h3>
                     <div class="accordion-wrapper">
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Search Coconut Damages</a></li>
-                            <li><a href="">Add New Pest and Diseases</a></li>
-                            <li><a href="">Contact Inquiry</a></li>
+                            <li><a href=""><span>></span> Home</a></li>
+                            <li><a href=""><span>></span> Search Coconut Damages</a></li>
+                            <li><a href=""><span>></span> Add New Pest and Diseases</a></li>
+                            <li><a href=""><span>></span> Contact Inquiry</a></li>
                         </ul>
                     </div>
                    
                 </div>
-                <div>
+                <div class="trunkline-wrapper">
                     <h3>Trunkline</h3>
-                    <h4>Telephone:<span>Text/Viber: 09175953930</span></h4>
-                    <h4>Mobile Phone:<span>Calls: 09171402936/09171465759</span></h4>
-                    <h4>Email Address:<span>pcadrc@mail.pca.gov.ph</span></h4>
+                    <h4>Telephone: <span> Text/Viber: 09175953930</span></h4>
+                    <h4>Mobile Phone: <span> Calls: 09171402936/09171465759</span></h4>
+                    <h4>Email Address: <span><a href="">pcadrc@mail.pca.gov.ph</a></span></h4>
                 </div>
             </div>
             <div class="copyright-wrapper">
                 <h4>Copyright &copy; 2023 PCA DRC. All Rights Reserved</h4>
             </div>
         </section>
-        <footer>
-            <div class="logo-gov-seal">
-                <img src="./images/GS.jpg" alt="">
-            </div>
-            <div>
-                <div>
-                    <h4>REPUBLIC OF THE PHILIPPINES</h4>
-                    <h5>All content is in the public domain unless otherwise stated.</h5>
+        <footer>  
+            <div class="footer-wrapper">
+                <div class="logo-gov-seal">
+                    <img src="./images/GS.jpg" alt="">
                 </div>
                 <div>
                     <h4>REPUBLIC OF THE PHILIPPINES</h4>
-                    <h5>Learn more about the Philippine government, its structure, how government works and the people behind it.</h5>
+                    <h5>All content is in the public domain unless <br>otherwise stated.</h5>
+                </div>
+                <div>
+                    <h4 class="indent-h4">REPUBLIC OF THE PHILIPPINES</h4>
+                    <h5>Learn more about the Philippine government, its <br> structure, how government works and the people behind it.</h5>
                     <ul>
                         <li><a href="">GOV.PH</a></li>
                         <li><a href="">Open Data Portal</a></li>

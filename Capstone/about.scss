@@ -1,0 +1,36 @@
+@mixin about-style{
+        .main-section{
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: auto 60% auto;
+            .about-us-section{
+                grid-column-start: 2;
+                grid-column-end: 3;
+                h2{
+                    font-family: var(--ff-tertiary);
+                    font-weight: var(--fw-bold);
+                    font-size: var(--fs-200);
+                    color: var(--clr-accent-400);
+                    // margin-bottom: 1.5rem;
+                }
+                .accordion-button{
+                    font-family: var(--ff-tertiary);
+                    font-size: var(--fs-100);
+                    font-weight: var(--fw-regular);
+                    border-top: 5px solid var(--clr-icons-400);
+                    color: var(--clr-accent-400);
+                }
+                .accordion-body{
+                    padding-top: 2rem;
+                    padding-inline: 2rem;
+                    strong {
+                        color: var(--clr-accent-400);
+                    }
+                }
+            }
+        }
+}
+
+body{
+    @include about-style();
+}
