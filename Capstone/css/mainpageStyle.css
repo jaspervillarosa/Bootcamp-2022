@@ -1,0 +1,385 @@
+body .wrapper-header {
+  margin: auto;
+}
+body .wrapper-header .secondary-nav {
+  display: grid;
+  background-color: var(--clr-accent-400);
+  grid-template-columns: auto auto auto auto auto;
+  padding-top: 5px;
+  padding-bottom: 0;
+  margin: 0;
+  height: 35px;
+}
+body .wrapper-header .secondary-nav .secondary-nav-contact {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+body .wrapper-header .secondary-nav .secondary-nav-contact li {
+  font-family: var(--ff-tertiary);
+  cursor: pointer;
+}
+body .wrapper-header .secondary-nav .secondary-nav-contact li a {
+  padding-left: 0.5rem;
+  font-size: var(--fs-body);
+  color: var(--clr-neutral-400);
+  text-decoration: none;
+}
+body .wrapper-header .secondary-nav .secondary-nav-contact li a:hover {
+  text-decoration: underline;
+}
+body .wrapper-header .secondary-nav .secondary-nav-contact li .fa-solid, body .wrapper-header .secondary-nav .secondary-nav-contact li .fa-regular {
+  font-size: x-small;
+  color: var(--clr-neutral-400);
+}
+body .wrapper-header .secondary-nav .secondary-nav-login {
+  list-style-type: none;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+body .wrapper-header .secondary-nav .secondary-nav-login li {
+  cursor: pointer;
+}
+body .wrapper-header .secondary-nav .secondary-nav-login li a {
+  padding-left: 0.5rem;
+  font-size: var(--fs-body);
+  color: var(--clr-neutral-400);
+  text-decoration: none;
+}
+body .wrapper-header .secondary-nav .secondary-nav-login li .fa-solid, body .wrapper-header .secondary-nav .secondary-nav-login li .fa-regular {
+  font-size: x-small;
+  color: var(--clr-icons-400);
+}
+body .wrapper-header .primary-nav-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: var(--clr-primary-300);
+  height: auto;
+}
+body .wrapper-header .primary-nav-wrapper h1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-family: var(--ff-tertiary);
+  font-size: var(--fs-100);
+  font-weight: var(--fw-bold);
+  padding-left: 2.5rem;
+  padding-top: 10px;
+}
+body .wrapper-header .primary-nav-wrapper h1 a {
+  text-decoration: none;
+  color: var(--clr-primary-500);
+}
+body .wrapper-header .primary-nav-wrapper .primary-nav {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  margin: 0;
+  padding-top: 5px;
+}
+body .wrapper-header .primary-nav-wrapper .primary-nav ul {
+  display: unset;
+  display: flex;
+  list-style-type: none;
+}
+body .wrapper-header .primary-nav-wrapper .primary-nav ul li {
+  font-family: var(--ff-tertiary);
+}
+body .wrapper-header .primary-nav-wrapper .primary-nav ul li a {
+  text-decoration: none;
+  font-size: var(--fs-body);
+  color: var(--clr-primary-500);
+  font-weight: var(--fw-bold);
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  transition: background-color 0.3s;
+  background-color: transparent;
+  padding-inline: 1rem;
+}
+body .wrapper-header .primary-nav-wrapper .primary-nav ul li a:hover {
+  background-color: var(--clr-primary-400);
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-inline: 1rem;
+}
+body .pca-logo-section {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+body .pca-logo-section .wrapper-pca-logo {
+  display: unset;
+  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-left: 6rem;
+  gap: 1rem;
+}
+body .pca-logo-section .wrapper-pca-logo .pcaLogo {
+  width: 120px;
+  height: 100px;
+  padding-top: 10px;
+}
+body .pca-logo-section .wrapper-pca-logo .pca-logo-txt {
+  padding-top: 20px;
+}
+body .pca-logo-section .wrapper-pca-logo .pca-logo-txt h4 {
+  font-family: var(--ff-tertiary);
+  font-size: var(--fs-50);
+  line-height: 5px;
+}
+body .pca-logo-section .wrapper-pca-logo .pca-logo-txt .primaryHeader {
+  font-family: var(--ff-tertiary);
+  font-size: var(--fs-100);
+  font-weight: var(--fw-bold);
+}
+body .pca-logo-section .philippineTime-wrapper {
+  margin-left: 10rem;
+  padding-top: 15px;
+}
+body .pca-logo-section .philippineTime-wrapper h5 {
+  font-family: sans-serif;
+  font-size: var(--fs-25);
+  line-height: 10px;
+}
+body .pca-logo-section .philippineTime-wrapper .social-media-logos {
+  display: unset;
+  display: flex;
+  gap: 0.5rem;
+}
+body .pca-logo-section .philippineTime-wrapper .social-media-logos img {
+  width: 25px;
+  height: 25px;
+}
+body .main-section {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  margin-top: 4rem;
+}
+body .main-section .side-nav-wrapper {
+  margin-top: 1rem;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-left: 10rem;
+}
+body .main-section .side-nav-wrapper .side-nav-bar {
+  font-family: var(--ff-tertiary);
+}
+body .main-section .side-nav-wrapper .side-nav-bar h1 {
+  font-size: var(--fs-100);
+  color: var(--clr-accent-400);
+  font-weight: var(--fw-bold);
+}
+body .main-section .side-nav-wrapper .side-nav-bar ul {
+  list-style-type: none;
+}
+body .main-section .side-nav-wrapper .side-nav-bar ul a {
+  text-decoration: none;
+  font-size: var(--fs-50);
+  color: var(--clr-accent-400);
+}
+body .main-section .side-nav-wrapper .side-nav-bar ul a:hover {
+  text-decoration: underline;
+  color: var(--clr-accent-500);
+}
+body .main-section .main-section-data {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-right: 15rem;
+  cursor: pointer;
+}
+body .main-section .main-section-data h2 {
+  font-family: var(--ff-tertiary);
+  color: var(--clr-accent-400);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-secondary-heading);
+}
+body .main-section .main-section-data h5 {
+  color: var(--clr-accent-500);
+}
+body .main-section .main-section-data button {
+  font-family: var(--ff-tertiary);
+  font-size: var(--fs-50);
+  margin-bottom: 1rem;
+  transition: background-color 0.5s;
+}
+body .main-section .main-section-data button:hover {
+  background-color: var(--clr-accent-500);
+}
+body .main-section .main-section-data .data-types-section .card {
+  border: transparent;
+}
+body .main-section .main-section-data .data-types-section .card-title {
+  color: var(--clr-accent-400);
+}
+body .logos {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+body .logos ul {
+  display: unset;
+  display: flex;
+  list-style-type: none;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-left: 15rem;
+  margin-top: 3rem;
+}
+body .logos ul img {
+  width: 200px;
+  height: 200px;
+}
+body .accordion-pcadrc {
+  font-family: var(--ff-tertiary);
+  background-color: black;
+  margin-top: 2rem;
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper {
+  padding-block: 3rem;
+  display: grid;
+  grid-template-columns: 2fr auto auto auto auto 2fr;
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .davao-research-center-wrapper {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .davao-research-center-wrapper h3 {
+  font-size: var(--fs-100);
+  font-weight: var(--fw-bold);
+  margin-bottom: 2rem;
+  color: var(--clr-neutral-400);
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .davao-research-center-wrapper .loc-wrapper {
+  display: unset;
+  display: flex;
+  gap: 1rem;
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .davao-research-center-wrapper .loc-wrapper .fa-solid {
+  color: var(--clr-neutral-400);
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .davao-research-center-wrapper .loc-wrapper h4 {
+  font-size: var(--fs-50);
+  line-height: 20px;
+  font-weight: var(--fw-bold);
+  color: var(--clr-neutral-500);
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .davao-research-center-wrapper ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .davao-research-center-wrapper ul .fa-brands {
+  border: 1px solid var(--clr-neutral-400);
+  padding: 0.5rem;
+  font-size: var(--fs-50);
+  color: var(--clr-neutral-400);
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .quick-links-wrapper {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-left: 2rem;
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .trunkline-wrapper {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .quick-links-wrapper h3 {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-100);
+  margin-left: 2rem;
+  padding-left: 0;
+  color: var(--clr-neutral-400);
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .quick-links-wrapper .accordion-wrapper ul {
+  list-style-type: none;
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .quick-links-wrapper .accordion-wrapper ul li {
+  transition: background-color 0.3s;
+  background-color: transparent;
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .quick-links-wrapper .accordion-wrapper ul li a {
+  text-decoration: none;
+  color: var(--clr-primary-500);
+  transition: background-color 0.5s;
+  font-size: var(--fs-25);
+  font-family: var(--ff-tertiary);
+  color: var(--clr-neutral-400);
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .quick-links-wrapper .accordion-wrapper ul li a .span {
+  font-weight: var(--fw-bold);
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .quick-links-wrapper .accordion-wrapper ul li:hover {
+  background-color: var(--clr-accent-400);
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .trunkline-wrapper {
+  margin-left: 4rem;
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .trunkline-wrapper h3 {
+  font-size: var(--fs-100);
+  font-family: var(--ff-tertiary);
+  font-weight: var(--fw-bold);
+  color: var(--clr-neutral-400);
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .trunkline-wrapper h4 {
+  font-size: var(--fs-50);
+  font-family: var(--ff-tertiary);
+  line-height: 2rem;
+  color: var(--clr-neutral-400);
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .trunkline-wrapper h4 span {
+  font-weight: var(--fw-bold);
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .trunkline-wrapper h4 span a {
+  text-decoration: none;
+  color: var(--clr-icons-400);
+}
+body .accordion-pcadrc .pca-drc-accordionetc-wrapper .trunkline-wrapper h4 span a:hover {
+  color: var(--clr-accent-100);
+}
+body .accordion-pcadrc .copyright-wrapper {
+  display: flex;
+  justify-content: center;
+}
+body .accordion-pcadrc .copyright-wrapper h4 {
+  font-size: var(--fs-25);
+  color: var(--clr-neutral-400);
+}
+body footer {
+  display: grid;
+  grid-template-columns: 4fr auto 4fr;
+  background-color: var(--clr-neutral-200);
+  padding-block: 2rem;
+}
+body footer .footer-wrapper {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  display: unset;
+  display: flex;
+  gap: 2rem;
+}
+body footer .footer-wrapper .logo-gov-seal {
+  width: 120px;
+  height: 150px;
+}
+body footer .footer-wrapper h4 {
+  font-family: var(--ff-tertiary);
+  font-size: var(--fs-10);
+  font-weight: var(--fw-bold);
+}
+body footer .footer-wrapper h5 {
+  font-family: var(--ff-tertiary);
+  font-size: var(--fs-10);
+  word-wrap: break-word;
+}
+body footer .footer-wrapper ul {
+  font-size: var(--fs-10);
+  list-style-type: none;
+}
+body footer .footer-wrapper ul a {
+  text-decoration: none;
+  color: var(--clr-primary-500);
+  font-family: var(--ff-tertiary);
+}
+body footer .footer-wrapper ul a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=mainpageStyle.css.map */
