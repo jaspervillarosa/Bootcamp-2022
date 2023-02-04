@@ -1,0 +1,52 @@
+:root {
+  --clr-accent-500: rgb(20,51,36);
+  --clr-accent-400: rgb(3,112,65);
+  --clr-accent-200: rgb(148,170,141);
+  --clr-accent-100: rgb(108,180,56);
+  --clr-accent-50:rgb(106,178,53);
+  --clr-primary-600: rgb(12,7,10);
+  --clr-primary-500: rgb(25,51,39);
+  --clr-primary-400: rgb(239,239,239);
+  --clr-primary-300: rgb(248,248,248);
+  --clr-primary-200: rgb(230,226,227);
+  --clr-primary-50: rgb(134,141,152);
+  --clr-neutral-50: rgb(255,255,255);
+  --clr-neutral-200: rgb(240,240,240);
+  --clr-neutral-400: rgb(245,245,245);
+  --clr-neutral-500:rgb(242,239,232);
+  --clr-icons-100: rgb(60,90,153);
+  --clr-icons-200: rgb(255,220,14) ;
+  --clr-icons-400: rgb(240,222,164);
+  --clr-icons-500: rgb(234,67,53);
+  --ff-primary:"Poppins", sans-serif;
+  --ff-secondary: "causten";
+  --ff-tertiary: "Open sans", sans-serif;
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-secondary);
+  --ff-accent: var(--ff-tertiary);
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+  --fs-10: .6125rem;
+  --fs-25: .7125rem;
+  --fs-50: .8125rem;
+  --fs-100: 1rem;
+  --fs-200: 1.5rem;
+  --fs-300: 1.8125rem;
+  --fs-400: 2.125rem;
+  --fs-500: 2.8125rem;
+  --fs-body: var(--fs-50);
+  --fs-primary-heading: var(--fs-500);
+  --fs-secondary-heading: var(--fs-400);
+  --fs-nav: var(--fs-50);
+  --fs-button: var(--fs-50);
+}
+
+@media screen and (max-width: 63.75em) {
+  :root {
+    --fs-body: var(--fs-50);
+    --fs-primary-heading: var(--fs-400);
+    --fs-secondary-heading: var(--fs-300);
+    --fs-nav: var(--fs-50);
+  }
+}/*# sourceMappingURL=Styles.css.map */
