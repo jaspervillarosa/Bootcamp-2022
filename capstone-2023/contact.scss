@@ -1,0 +1,93 @@
+@mixin contact-style{
+    .main-section{
+        box-sizing: border-box;
+        display: unset;
+        display: grid;
+        grid-template-columns: auto 64% auto;
+        margin-right: 12rem;
+        // grid-row-gap: 10px;
+        // grid-column-gap:10px;
+        .big-container{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            
+            h2{
+                font-size: var(--fs-secondary-heading);
+                font-weight: var(--fw-bold);;
+                color: var(--clr-primary-600);
+                display: flex;
+                justify-content:center;
+                margin-bottom: 2rem;
+            }
+            .container{
+                display: flex;
+                gap: 4rem;
+                .contact-wrapper{
+                    border: 2px solid var(--clr-accent-100);
+                    border-radius: 10px;
+                    padding: 1rem;
+                    .fa-sharp{
+                       font-size: var(--fs-500);
+                       color: var(--clr-accent-400);
+                       display: flex;
+                       justify-content: center;
+                       margin-bottom: 2rem;
+                    }
+                    h5{
+                        font-size: var(--fs-50);
+                        font-family: var(--ff-tertiary);
+                        a{
+                            text-decoration: none;
+                            color: var(--clr-accent-400);
+                            font-weight: var(--fw-bold);
+                        }
+                       }
+                       h4{
+                        font-size: var(--fs-50);
+                        font-weight: var(--fw-bold);
+                        font-family: var(--ff-tertiary);
+                       }
+
+                }
+            }
+        }
+
+    }
+    .map-location-wrapper{
+        box-sizing: border-box;
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: auto 64% auto;
+        padding-right: 10rem;
+        .wrapper-location{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            display: flex;
+            gap: 2rem;
+            padding-left: 1rem;
+            h4{
+                font-size: var(--fs-50);
+                font-weight: var(--fw-bold);
+                font-family: var(--ff-tertiary);
+            }
+            h5{
+                font-size: var(--fs-50);
+                font-family: var(--ff-tertiary);
+                a{
+                    text-decoration: none;
+                    color: var(--clr-accent-400);
+                    font-weight: var(--fw-bold);
+                }
+               }
+            iframe{
+                width: 60%;
+                height: 400px;
+           } 
+        }
+    }
+
+}
+
+body{
+    @include contact-style();
+}

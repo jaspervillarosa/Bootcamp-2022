@@ -99,60 +99,32 @@
                     <button type="button" class="btn btn-success"> <span> + </span>Add New Pest and or Disease</button>
                 </div>
                 <div class="table-datasets-wrapper">
-                    <table class="table">
-                        <thead>
-                          <tr>
-                            <th scope="col">Name</th>
-                            <th scope="col">Image</th>
-                            <th scope="col">Scientific Name</th>
-                            <th scope="col">Cause</th>
-                            <th scope="col">Remark</th>
-                            <th scope="col">Management</th>
-                            <th scope="col">Action</th>
-                          </tr>
-                        </thead>
-                        <tbody class="table-group-divider">
-                          <tr>
-                            <th >Rhinoceros beetle</th>
-                            <td><img src="./images/rhinoceros-beetle.webp" alt=""></td>
-                            <td>Dynastinae</td>
-                            <td>Adults remain in the pupal cell for 17-22 days before emerging and flying to palm crowns to feed. They are active at night and hide in feeding or breeding sites during the day.</td>
-                            <td>The beetles damage palms by boring into the centre of the crown, injuring the young growing tissues and feed on the exuded sap.</td>
-                            <td>Chop and burn decaying logs or break them up and destroy any adult beetles developing inside. Cut stumps as close to the soil surface as possible.</td>
-                            <td><a href=""><i class="fa-solid fa-pencil"></i></a><a href=""><i class="fa-solid fa-trash-can"></i></a></td>
-                          </tr>
-                          <tr>
-                            <th >Red palm weevil</th>
-                            <td><img src="./images/red-weevil.webp" alt=""></td>
-                            <td>Rhynchophorus ferrugineus</td>
-                            <td>Volatiles emanating from unhealthy or damaged palm trees, and aggregation pheromones</td>
-                            <td> Palm Weevil larvae feed within the apical growing point of the palms creating extensive damage to palm tissues and weakening the structure of the palm trunk.</td>
-                            <td>Trunk injections or soil applications of systemic insecticides that move inside the palm poisoning weevil larvae and adults may also be effective.</td>
-                            <td><a href=""><i class="fa-solid fa-pencil"></i></a><a href=""><i class="fa-solid fa-trash-can"></i></a></td>
-                          </tr>
-                          <tr>
-                            <th >Shot hole or Bark borer</th>
-                            <td ><img src="./images/bark-borer.jpg" alt=""></td>
-                            <td>Scolytus rugulosus</td>
-                            <td>Farming it inside the tree as a food source for the beetle and its larvae. In susceptible trees, the fungus kills vascular tissue causing Fusarium dieback and tree death.</td>
-                            <td>Have significant impact on amenity trees, native vegetation, and the fruit and nut tree industries.</td>
-                            <td>Conducting trapping and surveillance to determine the spread of the pest.
-
-Traps are being distributed through the Quarantine Area and across the metro area, these will remain in place for at least six months.</td>
-                            <td><a href=""><i class="fa-solid fa-pencil"></i></a><a href=""><i class="fa-solid fa-trash-can"></i></a></td>
-                          </tr>
-                          <tr>
-                            <th>Black headed caterpillar</th>
-                            <td><img src="./images/caterpillar.png" alt=""></td>
-                            <td>Opisina arenosella</td>
-                            <td>It is the larvae of coconut caterpillar that causes the damage, feeding on the surface tissues of the underside of the leaflets. </td>
-                            <td>Recognized by dried up and green patches appearing on the upper epidermis of leaves, presence of larval silk galleries, moulds and pupal cases on lower surfaces of leaves.</td>
-                            <td>Releasing the parasitoids Goniozus nephantidis or Bracon brevicornis once in a fortnight till the menace is cleared. </td>
-                            <td><a href=""><i class="fa-solid fa-pencil"></i></a><a href=""><i class="fa-solid fa-trash-can"></i></a></td>
-                          </tr>
-                          
+                    <div class="table-datasets-wrapper">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Image</th>
+                                <th scope="col">Scientific Name</th>
+                                <th scope="col">Cause</th>
+                                <th scope="col">Remark</th>
+                                <th scope="col">Management</th>
+                                <th scope="col">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                            <% pestLists.forEach(pests => { %>
+                              <tr>
+                                <th ><%= pests.pestName %></th>
+                                <td><img src="./images/rhinoceros-beetle.webp" alt=""></td>
+                                <td><%= pests.scientificName %></td>
+                                <td><%= pests.cause %></td>
+                                <td><%= pests.remark %></td>
+                                <td><%= pests.management %></td>
+                              </tr>
+                            <% }) %>
                         </tbody>
-                      </table>
+                            </table>
                 </div>
                 </div>
                 <!-- second database  -->
