@@ -1,21 +1,23 @@
-section .wrapper-contact {
-  display: grid;
-  grid-template-columns: 3fr auto minmax(600px, 3fr) auto 3fr;
-  margin-top: 12rem;
-}
-section .wrap-content {
-  grid-column: 3/4;
-}
-section ul {
-  list-style-type: none;
-}
-section a {
-  text-decoration: none;
-}
-section h3 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-section .question-paragraph {
-  text-align: center;
+@media only screen and (min-width: 1020px) {
+  section .wrapper-contact {
+    display: grid;
+    grid-template-columns: 3fr auto minmax(600px, 3fr) auto 3fr;
+    margin-top: 12rem;
+  }
+  section .wrap-content {
+    grid-column: 3/4;
+  }
+  section ul {
+    list-style-type: none;
+  }
+  section a {
+    text-decoration: none;
+  }
+  section h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  section .question-paragraph {
+    text-align: center;
+  }
 }/*# sourceMappingURL=contactone.css.map */

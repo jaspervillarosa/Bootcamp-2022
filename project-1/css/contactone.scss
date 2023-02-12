@@ -1,35 +1,39 @@
 @mixin contact-layout {
 
-    .wrapper-contact {
+    @media only screen and (min-width: 1020px){
 
-        display: grid;
-        grid-template-columns: 3fr auto minmax(600px, 3fr) auto 3fr;  
-        margin-top: 12rem;
+        .wrapper-contact {
+
+            display: grid;
+            grid-template-columns: 3fr auto minmax(600px, 3fr) auto 3fr;  
+            margin-top: 12rem;
+        }
+    
+        .wrap-content {
+    
+            grid-column: 3/4;
+        }
+    
+        ul {
+            list-style-type: none;
+    
+        }
+    
+        a {
+            text-decoration: none;
+        }
+    
+        h3 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+    
+        .question-paragraph {
+    
+            text-align: center;
+        }
     }
-
-    .wrap-content {
-
-        grid-column: 3/4;
-    }
-
-    ul {
-        list-style-type: none;
-
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    h3 {
-        text-align: center;
-        margin-bottom: 1.5rem;
-    }
-
-    .question-paragraph {
-
-        text-align: center;
-    }
+  
 }
 
 section {

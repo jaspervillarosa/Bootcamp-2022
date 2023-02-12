@@ -122,6 +122,8 @@
             cursor: pointer;
             height: 2rem;
             background: none;
+
+         
             
         }
 
@@ -138,7 +140,7 @@
 
         .hamburger-Container.is-active::before {
 
-            transform: rotate(-45deg) translate(-8px, 6px);
+            transform: rotate(-95deg) translate(-10px, 6px);
         }
 
         
